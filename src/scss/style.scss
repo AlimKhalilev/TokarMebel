@@ -1,0 +1,132 @@
+@import "./lib/normalize";
+@import "./lib/colors";
+@import "./lib/grid";
+@import "./lib/fonts";
+@import "./lib/lightslider";
+//@import "./lib/animate";
+@import "./lib/mixins";
+@import "./lib/burger";
+@import "./lib/sprite"; // общий стиль иконок
+@import "./sprite/icons"; // стили иконок, которые генерируются автоматически
+@import "./lib/components";
+
+/* СТИЛИ КОМПОНЕНТОВ (первая буква c- означает custom) */
+
+@import "./components/btn";
+@import "./components/link";
+@import "./components/c-checkbox";
+@import "./components/c-field";
+@import "./components/c-select";
+@import "./components/c-details";
+@import "./components/с-dropdown";
+
+@import "modal";
+@import "header";
+@import "footer";
+
+.main {
+
+    // .main__inner
+
+    &__inner {
+
+    }
+
+    // .main__header
+
+    &__header {
+        margin-bottom: 1rem;
+    }
+
+    // .main__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.6rem;
+
+        > *:not(:last-child) {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    // .main__icons
+
+    &__icons {
+
+    }
+
+    // .main__buttons
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        @media ($media_sm) {
+            flex-direction: column;
+        }
+
+        button:not(:last-child) {
+            margin-right: 0.8rem;
+
+            @media ($media_sm) {
+                margin: 0 0 0.8rem 0;
+            }
+        }
+    }
+
+    // .main__slider
+
+    &__slider {
+
+    }
+}
+
+.slider {
+    display: flex;
+    // .slider__item
+
+    &__item {
+        display: flex;
+        padding: 0.6rem;
+    }
+
+    // .slider__card
+
+    &__card {
+        background-color: $color_primary;
+        color: $color_white;
+        text-align: center;
+        padding: 0.8rem;
+        box-shadow: 0.25rem 0.25rem 0.25rem 0.1rem rgba(34, 34, 34, 0.3);
+
+        img {
+            max-width: 100%;
+            margin-top: 0.8rem;
+        }
+    }
+}
+
+.scrollBlock {
+
+    // .scrollBlock__inner
+
+    &__inner {
+
+    }
+
+    // .scrollBlock__preview
+
+    &__preview {
+        background-color: $color_primary;
+        color: $color_white;
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+}
