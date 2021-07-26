@@ -10,49 +10,7 @@
 
         <section class="section section--underHeader section--beforeFooter components">
             <div class="section__inner components__inner">
-                <!-- <div class="components__elem input-group">
-                    <span class="input-group__label">Checkbox button</span>
-
-                    <div class="input-group__elems">
-                        <label class="input-group__elem c-checkbox">
-                            <input class="c-checkbox__input visually-hidden" type="checkbox" />
-                            <div class="c-checkbox__box">
-                                <svg class="c-checkbox__icon icon icon-check_bold"><use xlink:href="img/sprite.svg#check_bold"></use></svg>
-                            </div>
-                            <span class="c-checkbox__text">Выбери меня!</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="components__elem input-group">
-                    <span class="input-group__label">Radio buttons</span>
-
-                    <div class="input-group__elems">
-                        <label class="input-group__elem c-checkbox c-checkbox--radio">
-                            <input class="c-checkbox__input visually-hidden" type="radio" name="customRadio" />
-                            <div class="c-checkbox__box">
-                                <div class="c-checkbox__icon"></div>
-                            </div>
-                            <span class="c-checkbox__text">Это радио!</span>
-                        </label>
-
-                        <label class="input-group__elem c-checkbox c-checkbox--radio">
-                            <input class="c-checkbox__input visually-hidden" type="radio" name="customRadio" />
-                            <div class="c-checkbox__box">
-                                <div class="c-checkbox__icon"></div>
-                            </div>
-                            <span class="c-checkbox__text">Это радио!</span>
-                        </label>
-
-                        <label class="input-group__elem c-checkbox c-checkbox--radio">
-                            <input class="c-checkbox__input visually-hidden" type="radio" name="customRadio" />
-                            <div class="c-checkbox__box">
-                                <div class="c-checkbox__icon"></div>
-                            </div>
-                            <span class="c-checkbox__text">Это радио!</span>
-                        </label>
-                    </div>
-                </div>
+                
 
                 <div class="components__elem input-group">
                     <span class="input-group__label">Links</span>
@@ -72,7 +30,7 @@
                         </a>
 
                     </div>
-                </div> -->
+                </div>
 
                 <div class="components__elem input-group">
                     <span class="input-group__label">Buttons</span>
@@ -191,6 +149,22 @@
                                 <svg class="icon icon-loupe c-field__icon c-field__icon--min">
                                     <use xlink:href="img/sprite.svg#loupe"></use>
                                 </svg>
+                            </div>
+                        </label>
+
+                        <label class="input-group__elem c-field">
+                            <span class="c-field__title">Форма с иконкой</span>
+                            <div class="c-field__area c-field__area--icon">
+                                <input class="c-field__input" type="text" placeholder="Найди меня!"/>
+                                <svg class='icon icon-user c-field__icon'><use xlink:href='img/sprite.svg#user'></use></svg>
+                            </div>
+                        </label>
+
+                        <label class="input-group__elem c-field">
+                            <span class="c-field__title">Форма с иконкой</span>
+                            <div class="c-field__area c-field__area--icon">
+                                <input class="c-field__input" type="text" placeholder="Найди меня!"/>
+                                <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
                             </div>
                         </label>
 
@@ -619,7 +593,7 @@
                                 <li class="menu-list__item">Дома из блока</li>
                             </ul>
 
-                            <div class="menu bg_primary">
+                            <div class="menu bg-primary">
                                 <div class="menu__header">
                                     <h4 class="menu__title">Меню</h4>
                                     <div class="menu__icon">
@@ -771,6 +745,171 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="consult-inputs">
+                                <label class="consult-inputs__input c-field">
+                                    <div class="c-field__area c-field__area--icon">
+                                        <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                        <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                    </div>
+                                </label>
+                                <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                            </div>
+
+                            <div class="consult-inputs consult-inputs--column">
+                                <label class="consult-inputs__input c-field">
+                                    <div class="c-field__area c-field__area--icon">
+                                        <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                        <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                    </div>
+                                </label>
+                                <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                            </div>
+
+                            <div class="card card--inline">
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Закажите консультацию, если сомневаетесь</h3>
+                                    <div class="card__inputs consult-inputs consult-inputs--column">
+                                        <label class="consult-inputs__input c-field">
+                                            <div class="c-field__area c-field__area--icon">
+                                                <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                                <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                            </div>
+                                        </label>
+                                        <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                                    </div>
+                                    <p class="card__signature">
+                                        Отправляя данные, Вы соглашаетесь на обработку
+                                        <a class="input-group__elem link" href="#">персональных данных</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="card card--inline card--reverse">
+
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/consult-bg.png" alt="Изображение консультации" adaptImg>
+                                </div>
+        
+                                <div class="card__content">
+                                    <h3 class="card__title">Закажите консультацию, если сомневаетесь</h3>
+                                    <div class="card__inputs consult-inputs">
+                                        <label class="consult-inputs__input c-field">
+                                            <div class="c-field__area c-field__area--icon">
+                                                <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                                <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                            </div>
+                                        </label>
+                                        <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                                    </div>
+                                    <p class="card__signature">
+                                        Отправляя данные, Вы соглашаетесь на обработку
+                                        <a class="input-group__elem link" href="#">персональных данных</a>
+                                    </p>
+                                </div>
+        
+                            </div>
+
+
+                            <div class="card card--inline card--primary card--reverse">
+
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/consult-bg.png" alt="Изображение консультации" adaptImg>
+                                </div>
+        
+                                <div class="card__content">
+                                    <h3 class="card__title">Закажите консультацию, если сомневаетесь</h3>
+                                    <div class="card__inputs consult-inputs">
+                                        <label class="consult-inputs__input c-field">
+                                            <div class="c-field__area c-field__area--icon">
+                                                <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                                <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                            </div>
+                                        </label>
+                                        <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                                    </div>
+                                    <p class="card__signature">
+                                        Отправляя данные, Вы соглашаетесь на обработку
+                                        <a class="input-group__elem link" href="#">персональных данных</a>
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card card--inline card--reverse">
+        
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/personal-project.png" alt="Изображение персонального проекта" adaptImg>
+                                </div>
+        
+                                <div class="card__content">
+                                    <h3 class="card__title">Нет подходящего проекта?</h3>
+                                    <p class="card__description">Мы разработаем проект индивидуально под ваш запрос с помощью 3D-макета</p>
+                                    <button class="btn btn--primary">Разработать проект</button>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card card--inline">
+        
+                                <div class="card__content">
+                                    <h3 class="card__title">Закажите консультацию, если сомневаетесь</h3>
+                                    <div class="card__inputs consult-inputs consult-inputs--column">
+                                        <label class="consult-inputs__input c-field">
+                                            <div class="c-field__area c-field__area--icon">
+                                                <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                                <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                            </div>
+                                        </label>
+                                        <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                                    </div>
+                                    <p class="card__signature">
+                                        Отправляя данные, Вы соглашаетесь на обработку
+                                        <a class="input-group__elem link" href="#">персональных данных</a>
+                                    </p>
+                                </div>
+        
+                            </div>
+
+                            <div class="card card--inline">
+        
+                                <div class="card__content">
+                                    <h3 class="card__title">Закажите консультацию, если сомневаетесь</h3>
+                                    <div class="card__inputs consult-inputs consult-inputs--column">
+                                        <label class="consult-inputs__input c-field">
+                                            <div class="c-field__area c-field__area--icon">
+                                                <input class="consult-inputs__field c-field__input" type="text" placeholder="Введите имя"/>
+                                                <svg class='icon icon-user c-field__icon'><use xlink:href='img/sprite.svg#user'></use></svg>
+                                            </div>
+                                        </label>
+                                        <label class="consult-inputs__input c-field">
+                                            <div class="c-field__area c-field__area--icon">
+                                                <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                                <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                            </div>
+                                        </label>
+                                        <button class="consult-inputs__btn btn btn--primary">Получить точный расчет</button>
+                                    </div>
+                                    <p class="card__signature">
+                                        Отправляя данные, Вы соглашаетесь на обработку
+                                        <a class="input-group__elem link" href="#">персональных данных</a>
+                                    </p>
+                                </div>
+        
+                            </div>
+
+                            <div class="breadcrumb">
+                                <a class="breadcrumb__link" href="#">Главная страница</a>
+                                <a class="breadcrumb__link" href="#">О компании</a>
+                            </div>
+
+
 
 						</div>
 

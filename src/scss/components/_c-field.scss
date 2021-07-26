@@ -36,6 +36,7 @@
     &__area {
         display: inline-flex;
         position: relative;
+        width: 100%;
 
         &[data-passwordSwitcher] {
             @include cursorPointer;
@@ -45,7 +46,7 @@
 
         &--icon {
             .c-field__input {
-                padding-right: calc(var(--inputPaddingX) + var(--iconSize) + 0.4rem);
+                padding-left: calc(var(--inputPaddingX) + (var(--iconSize) * 2));
 
                 &:hover, &:focus {
                     ~ .c-field__icon {
@@ -66,12 +67,13 @@
         display: inline-flex;
         border: none;
         outline: none;
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
         padding: 0 var(--inputPaddingX);
         font-weight: 500;
-        height: 3.2rem;
-        border: 1px solid lighten($color_main, 15%);
+        height: 4.125rem;
+        border: 1px solid $color_footer_divider;
         transition: 0.3s ease-in-out;
+        font-size: 0.9rem;
 
         &::placeholder {
             color: $color_secondary;
@@ -94,7 +96,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: var(--inputPaddingX);
+        left: var(--inputPaddingX);
         transition: 0.3s ease-in-out;
 
         width: var(--iconSize);

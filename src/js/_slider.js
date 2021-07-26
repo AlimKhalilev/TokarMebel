@@ -5,6 +5,18 @@ function initSlider() {
 
     let screen_xs = 576; // mobile
     let screen_sm = 768; // mobile-reverse
+    
+    function getCurrentElemCount(items) {
+        if (g_body.offsetWidth > screen_sm) {
+            return items[0];
+        }
+        else if (g_body.offsetWidth < screen_xs) {
+            return items[2];
+        }
+        else {
+            return items[1];
+        }
+    }
 
     $("[data-slider]").each(function(_, elem) {
 
@@ -18,6 +30,8 @@ function initSlider() {
             items = items.map(e => +e); // преобразуем строки в числа
         }
 
+        let currentElemCount = getCurrentElemCount(items);
+
         let mySlider = $(elem).lightSlider({
             item: items[0],
             slideMove: 1,
@@ -26,6 +40,7 @@ function initSlider() {
             easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
             speed: 600,
             onBeforeSlide: function (el) {
+                //console.log(el, currentElemCount);
                 wrapper.find(".lSAction__info .current").text(el.getCurrentSlideCount());
             },
             responsive: [
@@ -44,7 +59,7 @@ function initSlider() {
             ]
         });
 
-        let lsAction_info = `<div class='lSAction__info'> <span class='current'>${mySlider.getCurrentSlideCount()}</span> / <span class='total'>${mySlider.getTotalSlideCount()}</span> </div>`;
+        let lsAction_info = `<div class='lSAction__info'> <span class='current'>${mySlider.getCurrentSlideCount()}</span> / <span class='total'>${mySlider.getTotalSlideCount() - currentElemCount + 1}</span> </div>`;
         wrapper.find(".lSAction").append(lsAction_info);
 
 

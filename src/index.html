@@ -3,7 +3,7 @@
 	<head>
 
 		@@include('_head.html', {
-			"title": "starterGulp - Main Page"
+			"title": "TokarMebel - Главная страница"
 		})
 
 	</head>
@@ -13,103 +13,7 @@
             "main": "menu__item--active"
         })
 
-		<menu class="section menu bg_primary">
-			<div class="menu__header">
-				<h4 class="menu__title">Меню</h4>
-				<div class="menu__icon" data-menu='close'>
-					<img class="imMax" src="./img/burger-close.svg" alt="Иконка закрытия меню">
-				</div>
-			</div>
-			<div class="menu__body">
-				<div class="menu__links">
-					<div class="menu-details">
-						<div class="menu-details__item details" data-details>
-							<div class="menu-details__header details__header">
-								<a class="menu-details__title">Жилое</a>
-							</div>
-							<div class="menu-details__body details__body">
-								<ul class="menu-list">
-									<li class="menu-list__item">Дома из профилированого бруса</li>
-									<li class="menu-list__item">Дома из оцилиндрованого бруса</li>
-									<li class="menu-list__item">Каркасные дома</li>
-									<li class="menu-list__item">Дома из блока</li>
-								</ul>
-							</div>
-						</div>
-						<div class="menu-details__item details" data-details>
-							<div class="menu-details__header details__header">
-								<a class="menu-details__title">Коммерческое</a>
-							</div>
-							<div class="menu-details__body details__body">
-								<ul class="menu-list">
-									<li class="menu-list__item">Базы отдыха</li>
-									<li class="menu-list__item">Гостинницы</li>
-									<li class="menu-list__item">Рестораны</li>
-									<li class="menu-list__item">Кафе</li>
-									<li class="menu-list__item">Магазины</li>
-								</ul>
-							</div>
-						</div>
-						<div class="menu-details__item details" data-details>
-							<div class="menu-details__header details__header">
-								<a class="menu-details__title">Садовое</a>
-							</div>
-							<div class="menu-details__body details__body">
-								<ul class="menu-list">
-									<li class="menu-list__item">Деревянные	бани</li>
-									<li class="menu-list__item">Беседки</li>
-									<li class="menu-list__item">Альтанки</li>
-									<li class="menu-list__item">Детские	игровые	площадки</li>
-									<li class="menu-list__item">Гаражи</li>
-									<li class="menu-list__item">Деревянные	детские	домики</li>
-									<li class="menu-list__item">Мангальные	зоны и	барбекю</li>
-									<li class="menu-list__item">Кухни</li>
-								</ul>
-							</div>
-						</div>
-						<div class="menu-details__item menu-details__item--empty details" data-details>
-							<div class="menu-details__header details__header">
-								<a href="#" class="menu-details__title">О компании</a>
-							</div>
-						</div>
-						<div class="menu-details__item menu-details__item--empty details" data-details>
-							<div class="menu-details__header details__header">
-								<a href="#" class="menu-details__title">Наши работы</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="menu__footer">
-
-					<div class="menu__elem social-contact">
-						<span class="social-contact__text">Связаться напрямую:</span>
-						<div class="social-contact__icons">
-							<a href="#" class="social-contact__icon">
-								<img class="imgMax" src="./img/icon-telegram.svg" alt="Иконка телеграма">
-							</a>
-							<a href="#" class="social-contact__icon">
-								<img class="imgMax" src="./img/icon-whatsapp.svg" alt="Иконка ватсапа">
-							</a>
-							<a href="#" class="social-contact__icon">
-								<img class="imgMax" src="./img/icon-viber.svg" alt="Иконка вайбера">
-							</a>
-						</div>
-					</div>
-
-					<div class="menu__elem info-contact">
-						<a href="tel: +3 80 (67) 175 56 30" class="info-contact__number">+3 80 (67) 175 56 30</a>
-						<span class="info-contact__workTime">с 09:00 до 18:00 (пн-вс)</span>
-					</div>
-
-					<div class="menu__elem call-free">
-						<a class="btn btn--primary btn--middle" href="#">Заказать звонок</a>
-					</div>
-
-				</div>
-			</div>
-		</menu>
-
-		<main class="section promo bg_primary">
+		<main class="section promo bg-primary">
 			<div class="section__inner promo__container">
 				<div class="promo__content">
 					<h1 class="promo__title header_1">Производим и устанавливаем строения разных видов в Украине</h1>
@@ -228,7 +132,7 @@
 					<div class="project-catalog__card card card--inline">
 
 						<div class="card__picture">
-							<img class="card__img" src="./img/project_garden.png" alt="Изображение садового дома">
+							<img class="card__img" src="./img/project_garden.png" alt="Изображение садового дома" adaptImg>
 						</div>
 
 						<div class="card__content">
@@ -246,7 +150,7 @@
 			</div>
 		</section>
 
-		<section class="section section--indent compound bg_primary">
+		<section class="section section--indent compound bg-primary">
 			<div class="section__inner">
 				<div class="compound__header">
 					<h2 class="header_2">Из чего состоят наши <br>строения?</h2>
@@ -406,14 +310,14 @@
 					</div>
 				</div>
 
-				<div class="about__btn">
-					<button class="promo__button btn btn--primary">Подробнее о компании</button>
+				<div class="about__buttons">
+					<button class="about__button promo__button btn btn--primary">Подробнее о компании</button>
 				</div>
 
 			</div>
 		</section>
 
-		<section class="section section--indent three-types bg_primary">
+		<section class="section section--indent three-types bg-primary">
 			<div class="section__inner">
 				<div class="three-types__header">
 					<h2 class="header_2">Мы разделяем 3 вида <br>строений</h2>

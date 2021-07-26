@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "TokarMebel - О компании"
+		})
+
+	</head>
+	<body>
+		
+        @@include("_header.html", {
+            "main": "menu__item--active"
+        })
+
+        <section class="section breadcrumb-section">
+            <div class="section__inner">
+                <div class="breadcrumb">
+                    <a class="breadcrumb__link" href="./">Главная страница</a>
+                    <a class="breadcrumb__link" href="./about.html">О компании</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-simple">
+            <div class="section__inner">
+                <div class="about-simple__header header-relative">
+                    <h2 class="about-simple__title header_2 header_2--left">О компании</h2>
+                    <div class="header-relative__link">
+                        <a href="./" class="btn btn--transparent btn--transparent_primary">
+                            <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke btn__icon--stroke_rotate"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                            <span class="btn__text">Вернуться назад</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-simple__body">
+                    <p class="about-simple__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dignissimos, magni earum ea et eligendi molestias aspernatur ad id voluptatibus similique sequi voluptatem perspiciatis totam cum. 
+                        Architecto atque dolorem eveniet recusandae voluptatum, autem aliquam et libero tempora molestiae enim deserunt 
+                        debitis asperiores itaque maxime ea porro laudantium hic ducimus impedit delectus. 
+                        Rem commodi magni dolorem ducimus vero nemo enim numquam labore?
+                        <br>
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Est, vitae veritatis tempore voluptatibus, nisi quisquam autem voluptatem consequuntur neque assumenda ipsam quam excepturi 
+                        dolores repudiandae saepe dolorum laboriosam dignissimos natus hic? Exercitationem eveniet ex doloribus. 
+                        Repellendus delectus fuga molestias quibusdam!
+                    </p>
+                    <div class="about-simple__slider">
+                        <div class="slider" data-slider>
+                            <div class="slider__item">
+                                <img class="imgMax" src="./img/promo-1.png" alt="Садовый домик">
+                            </div>
+                            <div class="slider__item">
+                                <img class="imgMax" src="./img/promo-2.png" alt="Садовый домик другой">
+                            </div>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--indent about">
+
+			<div class="section__inner">
+				
+				<div class="about__header">
+					<h2 class="header_2">О компании TokarMebel</h2>
+				</div>
+
+				<div class="about__promo">
+
+					<div class="about__bg">
+						<picture>
+							<source media="(max-width: 768px)" srcset="./img/about-bg-min.png">
+							<img class="imgMax" src="./img/about-bg.png" alt="Фон цеха">
+						</picture>
+					</div>
+
+					<div class="about__author">
+						<img class="imgMax" src="./img/about-owner.png" alt="Создатель компании">
+					</div>
+
+					<div class="about__play about-play">
+						<a href="#" class="about-play__icon">
+							<img src="./img/icon-play.svg" alt="Иконка прогрывания видео">
+						</a>
+						<p class="about-play__text">Посмотреть короткое видео о компании (2:42 мин)</p>
+					</div>
+
+				</div>
+
+				<div class="about__card about-card">
+					<div class="about-card__img">
+						<img class="imgMax" src="./img/about-icon.svg" alt="Иконка о нас">
+					</div>
+					<div class="about-card__content">
+						<h3 class="about-card__author">Точилов Александр Николаевич</h3>
+						<p class="about-card__description">
+							Цитата о компании, пару слов от самого лица компании. 
+							Цитата о компании, пару слов от самого лица компании. 
+						</p>
+					</div>
+				</div>
+
+				<div class="about__advance">
+					<div class="about__item about-info">
+						<p class="about-info__title"> <span class="about-info__big">21</span> год</p>
+						<p class="about-info__description">Работаем на рынке Украины с 1998 года</p>
+					</div>
+
+					<div class="about__item about-info">
+						<p class="about-info__title"><span class="about-info__big">300+</span></p>
+						<p class="about-info__description">Позиций различных строений</p>
+					</div>
+
+					<div class="about__item about-info">
+						<p class="about-info__title">до <span class="about-info__big">7%</span></p>
+						<p class="about-info__description">Влажность просушенного дерева, что соответствует нормативам ГОСТ</p>
+					</div>
+
+					<div class="about__item about-info">
+						<p class="about-info__title">в <span class="about-info__big">1,5</span> раза</p>
+						<p class="about-info__description">Стоимость доставки ниже рыночной</p>
+					</div>
+				</div>
+
+				<div class="about__buttons">
+					<button class="about__button btn btn--primary">Подробнее о компании</button>
+                    <button class="about__button btn btn--transparent btn--transparent_primary">
+                        <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                        <span class="btn__text">Каталог бань</span>
+                    </button>
+				</div>
+
+			</div>
+		</section>
+
+        <section class="section section--indent about-choose bg-primary">
+            <div class="section__inner">
+                
+				<div class="about-choose__elem card card--border choose-block">
+					<div class="card__content choose-block__content">
+						<h2 class="choose-block__title header_2">Почему выбирают нас:</h2>
+
+						<div class="choose-block__items">
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-1.svg" alt="Эксклюзивный дизайн">
+								</div>
+								<h4 class="choose-card__title">Эксклюзивный дизайн</h4>
+								<p class="choose-card__description">Не имеющий аналогов в Украине</p>
+							</div>
+	
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-2.svg" alt="Разработка модели">
+								</div>
+								<h4 class="choose-card__title">Разработка модели</h4>
+								<p class="choose-card__description">Индивидуальной с помощью 3D-визуализации в нашем приложении</p>
+							</div>
+	
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-3.svg" alt="Сертификаты качества">
+								</div>
+								<h4 class="choose-card__title">Сертификаты качества</h4>
+								<p class="choose-card__description">Подтверждают наши материалы и комплектующие</p>
+							</div>
+	
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-4.svg" alt="Работа под ключ">
+								</div>
+								<h4 class="choose-card__title">Работа под ключ</h4>
+								<p class="choose-card__description">В среднем за Х дней от установки фундамента до сдачи объекта в эксплуатацию</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+                <div class="about-choose__elem card card--inline card--reverse">
+
+                    <div class="card__picture">
+                        <img class="card__img" src="./img/consult-bg.png" alt="Изображение консультации" adaptImg>
+                    </div>
+
+                    <div class="card__content">
+                        <h3 class="card__title">Закажите консультацию, если сомневаетесь</h3>
+                        <div class="card__inputs consult-inputs">
+                            <label class="consult-inputs__input c-field">
+                                <div class="c-field__area c-field__area--icon">
+                                    <input class="consult-inputs__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                    <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                </div>
+                            </label>
+                            <button class="consult-inputs__btn btn btn--primary">Заказать</button>
+                        </div>
+                        <p class="card__signature">
+                            Отправляя данные, Вы соглашаетесь на обработку
+                            <a class="input-group__elem link" href="#">персональных данных</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section latest-article latest-article--spaceTop">
+			<div class="section__inner latest-article__inner sliderPrimary">
+				<div class="latest-article__header">
+					<h2 class="header_2">Фотографии производства</h2>
+				</div>
+				<div class="latest-article__slider" data-slider="3, 2, 1">
+
+                    <div class="latest-article__slide">
+						<img class="imgMax" src="./img/manufacture-1.png" alt="Изображение мунуфактуры">
+					</div>
+
+					<div class="latest-article__slide">
+						<img class="imgMax" src="./img/manufacture-2.png" alt="Изображение мунуфактуры">
+					</div>
+
+					<div class="latest-article__slide">
+						<img class="imgMax" src="./img/manufacture-3.png" alt="Изображение мунуфактуры">
+					</div>
+
+                    <div class="latest-article__slide">
+						<img class="imgMax" src="./img/manufacture-1.png" alt="Изображение мунуфактуры">
+					</div>
+
+					<div class="latest-article__slide">
+						<img class="imgMax" src="./img/manufacture-2.png" alt="Изображение мунуфактуры">
+					</div>
+
+					<div class="latest-article__slide">
+						<img class="imgMax" src="./img/manufacture-3.png" alt="Изображение мунуфактуры">
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+        <section class="section latest-article section--indent">
+			<div class="section__inner latest-article__inner sliderPrimary">
+				<div class="latest-article__header">
+					<h2 class="header_2">Последние статьи</h2>
+				</div>
+				<div class="latest-article__slider" data-slider="3, 2, 1">
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-1.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Готовый загородный дом или самостоятельное строительство?</h4>
+							<p class="article-card__description">
+								Купить или построить дом с нуля – неизбежный вопрос, 
+								когда возникает желание приобрести частную недвижимость за городом.
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-2.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Авторские проекты домов – почему эксклюзив выгоднее</h4>
+							<p class="article-card__description">
+								Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать индивидуальный. 
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-3.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Красивые дома: 100+ фото лучших проектов</h4>
+							<p class="article-card__description">
+								Современная малоэтажная застройка в России представлена как типовыми архитектурными решениями, популярными.
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-1.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Готовый загородный дом или самостоятельное строительство?</h4>
+							<p class="article-card__description">
+								Купить или построить дом с нуля – неизбежный вопрос, 
+								когда возникает желание приобрести частную недвижимость за городом.
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-2.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Авторские проекты домов – почему эксклюзив выгоднее</h4>
+							<p class="article-card__description">
+								Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать индивидуальный. 
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-3.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Красивые дома: 100+ фото лучших проектов</h4>
+							<p class="article-card__description">
+								Современная малоэтажная застройка в России представлена как типовыми архитектурными решениями, популярными.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		@@include("_footer.html")
+
+	</body>
+</html>

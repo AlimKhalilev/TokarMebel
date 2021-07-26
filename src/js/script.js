@@ -41,4 +41,9 @@ $(document).ready(function() {
     --include("_customSelect.js")
     --include("_details.js")
     --include("_dropdown.js")
+    --include("_adaptImg.js")
+
+    $("[phoneNumber]").each((_, item) => {
+        $(item).mask("+38 (999) 999-99-99")
+    });
 });

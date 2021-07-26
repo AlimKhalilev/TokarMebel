@@ -89,6 +89,13 @@
             margin-bottom: 0.5rem;
         }
     }
+
+    // .menu-list__link
+
+    &__link {
+        text-decoration: none;
+        color: $color_black_main;
+    }
 }
 
 .menu-details {

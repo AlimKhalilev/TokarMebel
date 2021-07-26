@@ -14,7 +14,7 @@
 /* СТИЛИ КОМПОНЕНТОВ (первая буква c- означает custom) */
 
 @import "./components/btn";
-//@import "./components/link";
+@import "./components/link";
 //@import "./components/c-checkbox";
 @import "./components/c-field";
 @import "./components/c-select";
@@ -75,7 +75,7 @@
 
 .card {
     position: relative;
-    background: $color_white;
+    background-color: $color_white;
     box-shadow: 0px 0px 1.9rem rgba(43, 42, 40, 0.08);
     border-radius: 0px 2.5rem 0px 0px;
     padding: 0.3rem;
@@ -84,7 +84,8 @@
 
     &--inline {
         max-width: unset;
-        display: flex;
+        display: inline-flex;
+        justify-content: space-between;
 
         @media ($media_sm) {
             display: block;
@@ -100,14 +101,27 @@
         }
 
         .card__img {
-            width: 26.25rem;
-            height: 19.375rem;
-
             @media ($media_sm) {
                 max-width: 100%;
                 min-width: 100%;
                 height: auto;
             }
+        }
+    }
+
+    // .card--primary
+
+    &--primary {
+        background-color: $color_body_bg;
+    }
+
+    // .card--reverse
+
+    &--reverse {
+        @media ($media_sm) {
+            display: flex;
+            flex-direction: column-reverse;
+            border-radius: 0 2.5rem 0 2.5rem;
         }
     }
 
@@ -118,32 +132,52 @@
         border-radius: 0.5rem;
     }
 
-    &::before {
-        position: absolute;
-        content: attr(data-card);
-        font-size: 8.75rem;
-        color: #cb8734;
-        opacity: .1;
-        font-weight: 800;
-        bottom: -1.6rem;
-        right: 2.7rem;
-        line-height: 1;
-        clip-path: inset(0 0 18% 0);
-
-        @media ($media_sm) {
-            right: unset;
-            left: 50%;
-            transform: translateX(-50%);
+    &[data-card] {
+        &::before {
+            position: absolute;
+            content: attr(data-card);
+            font-size: 8.75rem;
+            color: #cb8734;
+            opacity: .1;
+            font-weight: 800;
+            bottom: -1.6rem;
+            right: 2.7rem;
+            line-height: 1;
+            clip-path: inset(0 0 18% 0);
+    
+            @media ($media_sm) {
+                right: unset;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
+    }
+
+    // .card__inputs
+
+    &__inputs {
+        margin: 1.8rem 0;
+    }
+
+    // .card__signature
+
+    &__signature {
+        line-height: 1.6;
+        font-size: 0.9rem;
+        font-weight: 300;
     }
 
     // .card__content
 
     &__content {
-        padding: 1.75rem 1.25rem 1.25rem;
+        padding: 3rem 2.7rem 2.7rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media ($media_sm) {
+            padding: 2rem 1rem;
+        }
     }
 
     // .card__header
@@ -193,7 +227,7 @@
     &__title {
         font-weight: 400;
         font-size: 1.9rem;
-        line-height: 1;
+        line-height: 1.2;
 
         @media ($media_sm) {
             font-size: 1.75rem;
@@ -689,11 +723,32 @@
         }
     }
 
-    // .about__btn
+    // .about__buttons
 
-    &__btn {
+    &__buttons {
         margin-top: 2.5rem;
         text-align: center;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media ($media_sm) {
+            flex-wrap: wrap;
+        }
+    }
+
+
+    // .about__button
+
+    &__button {
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+
+            @media ($media_sm) {
+                margin: 0 0 2rem 0;
+            }
+        }
     }
 }
 
@@ -748,6 +803,12 @@
 
 .latest-article {
 
+    // .latest-article--spaceTop
+
+    &--spaceTop {
+        padding-top: var(--section_indent_max);
+    }
+
     // .latest-article__header
 
     &__header {
@@ -785,6 +846,76 @@
 
         @media ($media_sm) {
             padding: 0.1rem;
+        }
+    }
+}
+
+.breadcrumb-section {
+    margin: 1.5rem 0 2.5rem 0;
+
+    @media ($media_sm) {
+        margin: 1.5rem 0;
+    }
+}
+
+.about-simple {
+
+    // .about-simple__header
+
+    &__header {
+
+    }
+
+    // .about-simple__title
+
+    &__title {
+
+    }
+
+    // .about-simple__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+
+        @media ($media_sm) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    // .about-simple__text
+
+    &__text {
+        font-weight: 300;
+        line-height: 1.9;
+    }
+
+    // .about-simple__slider
+
+    &__slider {
+        width: 38.4rem;
+        min-width: 38.4rem;
+        height: 31.62rem;
+
+        @media ($media_sm) {
+            max-width: 100%;
+            min-width: 100%;
+            height: auto;
+
+            margin: 2rem 0;
+        }
+    }
+}
+
+.about-choose {
+
+    // .about-choose__elem
+
+    &__elem {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 3.75rem;
         }
     }
 }

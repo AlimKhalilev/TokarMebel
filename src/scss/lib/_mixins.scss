@@ -147,10 +147,32 @@ html, body {
     @media ($media_sm) {
         font-size: 1.5rem;
         text-align: center;
+
+        &--left {
+            text-align: left;
+        }
     }
 }
 
-.bg_primary {
+.header-relative {
+    position: relative;
+
+    // .header-relative__link
+
+    &__link {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media ($media_sm) {
+            display: none;
+        }
+    }
+}
+
+
+.bg-primary {
     background-color: $color_body_bg;
 }
 
@@ -183,7 +205,7 @@ html, body {
             position: absolute;
             width: 0.625rem;
             height: 0.625rem;
-            background: url("../../img/arrow-list.svg");
+            background: url("../img/arrow-list.svg");
             background-size: contain;
             background-repeat: no-repeat;
             content: "";
@@ -445,5 +467,69 @@ html, body {
         }
     }
 }
+
+.consult-inputs {
+    display: flex;
+
+    // .consult-inputs__input
+
+    &--column {
+        flex-wrap: wrap;
+
+        .consult-inputs__input {
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    @media ($media_sm) {
+        flex-wrap: wrap;
+
+        .consult-inputs__input {
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    // .consult-inputs__input
+
+    &__input {
+        margin-right: 1rem;
+        flex-basis: 200%;
+    }
+
+    // .consult-inputs__btn
+
+    &__btn {
+        flex-basis: 100%;
+        width: auto;
+    }
+
+    // .consult-inputs__field
+
+    &__field {
+        width: 100%;
+    }
+
+    
+}
+
+.breadcrumb {
+    display: flex;
+
+    // .breadcrumb__link
+
+    &__link {
+        color: $color_secondary;
+        text-decoration: none;
+        font-size: 0.8rem;
+
+        &:not(:last-child) {
+            &::after {
+                content: "/";
+                padding: 0 0.4rem;
+            }
+        }
+    }
+}
+
 
 // === / Mixins ===
