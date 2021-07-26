@@ -13,63 +13,556 @@
             "main": "menu__item--active"
         })
 
-		<section class="section section--underHeader main">
-			<div class="section__inner main__inner">
-
-				<div class="main__header">
-					<h1 class="blockTitle">Привет, это StarterGulp v1.2 beta!</h1>
+		<menu class="section menu bg_primary">
+			<div class="menu__header">
+				<h4 class="menu__title">Меню</h4>
+				<div class="menu__icon" data-menu='close'>
+					<img class="imMax" src="./img/burger-close.svg" alt="Иконка закрытия меню">
 				</div>
+			</div>
+			<div class="menu__body">
+				<div class="menu__links">
+					<div class="menu-details">
+						<div class="menu-details__item details" data-details>
+							<div class="menu-details__header details__header">
+								<a class="menu-details__title">Жилое</a>
+							</div>
+							<div class="menu-details__body details__body">
+								<ul class="menu-list">
+									<li class="menu-list__item">Дома из профилированого бруса</li>
+									<li class="menu-list__item">Дома из оцилиндрованого бруса</li>
+									<li class="menu-list__item">Каркасные дома</li>
+									<li class="menu-list__item">Дома из блока</li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-details__item details" data-details>
+							<div class="menu-details__header details__header">
+								<a class="menu-details__title">Коммерческое</a>
+							</div>
+							<div class="menu-details__body details__body">
+								<ul class="menu-list">
+									<li class="menu-list__item">Базы отдыха</li>
+									<li class="menu-list__item">Гостинницы</li>
+									<li class="menu-list__item">Рестораны</li>
+									<li class="menu-list__item">Кафе</li>
+									<li class="menu-list__item">Магазины</li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-details__item details" data-details>
+							<div class="menu-details__header details__header">
+								<a class="menu-details__title">Садовое</a>
+							</div>
+							<div class="menu-details__body details__body">
+								<ul class="menu-list">
+									<li class="menu-list__item">Деревянные	бани</li>
+									<li class="menu-list__item">Беседки</li>
+									<li class="menu-list__item">Альтанки</li>
+									<li class="menu-list__item">Детские	игровые	площадки</li>
+									<li class="menu-list__item">Гаражи</li>
+									<li class="menu-list__item">Деревянные	детские	домики</li>
+									<li class="menu-list__item">Мангальные	зоны и	барбекю</li>
+									<li class="menu-list__item">Кухни</li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-details__item menu-details__item--empty details" data-details>
+							<div class="menu-details__header details__header">
+								<a href="#" class="menu-details__title">О компании</a>
+							</div>
+						</div>
+						<div class="menu-details__item menu-details__item--empty details" data-details>
+							<div class="menu-details__header details__header">
+								<a href="#" class="menu-details__title">Наши работы</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu__footer">
 
-				<div class="main__content">
+					<div class="menu__elem social-contact">
+						<span class="social-contact__text">Связаться напрямую:</span>
+						<div class="social-contact__icons">
+							<a href="#" class="social-contact__icon">
+								<img class="imgMax" src="./img/icon-telegram.svg" alt="Иконка телеграма">
+							</a>
+							<a href="#" class="social-contact__icon">
+								<img class="imgMax" src="./img/icon-whatsapp.svg" alt="Иконка ватсапа">
+							</a>
+							<a href="#" class="social-contact__icon">
+								<img class="imgMax" src="./img/icon-viber.svg" alt="Иконка вайбера">
+							</a>
+						</div>
+					</div>
 
-					<!-- <div class="main__icons">
-						<svg class='icon icon-twitter'><use xlink:href='img/sprite.svg#twitter'></use></svg>
-						<svg class='icon icon-arrow-down'><use xlink:href='img/sprite.svg#arrow-down'></use></svg>
-					</div> -->
+					<div class="menu__elem info-contact">
+						<a href="tel: +3 80 (67) 175 56 30" class="info-contact__number">+3 80 (67) 175 56 30</a>
+						<span class="info-contact__workTime">с 09:00 до 18:00 (пн-вс)</span>
+					</div>
 
-					<img class="imgMax" src="img/gulp-demo.png" alt="test">
-
-					<div class="main__buttons">
-						<button data-modal="modal_success" class="btn btn--primary">Открыть модалку 1</button>
-						<button data-modal="modal_second" class="btn btn--primary">Открыть модалку 2</button>
+					<div class="menu__elem call-free">
+						<a class="btn btn--primary btn--middle" href="#">Заказать звонок</a>
 					</div>
 
 				</div>
+			</div>
+		</menu>
 
-				<div class="main__slider slider" data-slider="4,2,1">
-					<!-- .slider__item*8>.slider__card>span{Привет, это слайд №$}+img[src="./img/cat.jpg" alt="Кот"] -->
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №1</span><img src="./img/cat.jpg" alt="Кот"></div>
+		<main class="section promo bg_primary">
+			<div class="section__inner promo__container">
+				<div class="promo__content">
+					<h1 class="promo__title header_1">Производим и устанавливаем строения разных видов в Украине</h1>
+					<p class="promo__description">Индивидуально под ваш запрос построим дом, ресторан, баню, беседку, мангал или любую другую постройку</p>
+					<div class="promo__buttons">
+						<button class="promo__button btn btn--primary">Перейти в каталог домов</button>
+						<button class="promo__button btn btn--transparent btn--transparent_primary">
+							<svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+							<span class="btn__text">Каталог бань</span>
+						</button>
 					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №2</span><img src="./img/cat.jpg" alt="Кот"></div>
+				</div>
+				<div class="promo__img">
+					<div class="promo__slider slider" data-slider>
+						<div class="slider__item">
+							<img class="imgMax" src="./img/promo-1.png" alt="Садовый домик">
+						</div>
+						<div class="slider__item">
+							<img class="imgMax" src="./img/promo-2.png" alt="Садовый домик другой">
+						</div>
 					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №3</span><img src="./img/cat.jpg" alt="Кот"></div>
+				</div>
+				<div class="promo__mobile">
+					<div class="logo">
+						<span class="promo__tagline logo__description">TokarCompany - производственно -строительная компания</span>
 					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №4</span><img src="./img/cat.jpg" alt="Кот"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №5</span><img src="./img/cat.jpg" alt="Кот"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №6</span><img src="./img/cat.jpg" alt="Кот"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №7</span><img src="./img/cat.jpg" alt="Кот"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__card"><span>Привет, это слайд №8</span><img src="./img/cat.jpg" alt="Кот"></div>
+					<h1 class="promo__title promo__title--mobile header_1">Производим и устанавливаем строения разных видов в Украине</h1>
+				</div>
+			</div>
+		</main>
+
+		<section class="section choose">
+			<div class="section__inner ">
+
+				<div class="card card--border choose-block">
+					<div class="card__content choose-block__content">
+						<h2 class="choose-block__title header_2">Почему выбирают нас:</h2>
+
+						<div class="choose-block__items">
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-1.svg" alt="Эксклюзивный дизайн">
+								</div>
+								<h4 class="choose-card__title">Эксклюзивный дизайн</h4>
+								<p class="choose-card__description">Не имеющий аналогов в Украине</p>
+							</div>
+	
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-2.svg" alt="Разработка модели">
+								</div>
+								<h4 class="choose-card__title">Разработка модели</h4>
+								<p class="choose-card__description">Индивидуальной с помощью 3D-визуализации в нашем приложении</p>
+							</div>
+	
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-3.svg" alt="Сертификаты качества">
+								</div>
+								<h4 class="choose-card__title">Сертификаты качества</h4>
+								<p class="choose-card__description">Подтверждают наши материалы и комплектующие</p>
+							</div>
+	
+							<div class="choose-block__item choose-card">
+								<div class="choose-card__icon">
+									<img class="imgMax" src="./img/choose-icon-4.svg" alt="Работа под ключ">
+								</div>
+								<h4 class="choose-card__title">Работа под ключ</h4>
+								<p class="choose-card__description">В среднем за Х дней от установки фундамента до сдачи объекта в эксплуатацию</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
 			</div>
 		</section>
 
-		<section class="section section--beforeFooter scrollBlock">
-			<div class="section__inner scrollBlock__inner">
-				<div class="scrollBlock__preview">Это блок скролла</div>
+		<section class="section section--indent project-catalog">
+			<div class="section__inner">
+				<div class="project-catalog__title">
+					<h2 class="header_2">Каталог проектов</h2>
+				</div>
+				<div class="project-catalog__container">
+
+					<div class="project-catalog__card card">
+						<div class="card__picture">
+							<img class="card__img imgMax" src="./img/project_living.png" alt="Изображение жилого дома">
+						</div>
+
+						<div class="card__content">
+							<h3 class="card__title">Жилое</h3>
+							<p class="card__description">Раздел с домами, дачами, коттеджами, виллами, усадьбами и особняками</p>
+							<button class="card__btn btn btn--transparent btn--transparent_primary">
+								<svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+								<span class="btn__text">Ознакомиться с проектами</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="project-catalog__card card">
+						<div class="card__picture">
+							<img class="card__img imgMax" src="./img/project_commercial.png" alt="Изображение коммерческого дома">
+						</div>
+
+						<div class="card__content">
+							<h3 class="card__title">Коммерческое</h3>
+							<p class="card__description">Раздел с базами отдыха, гостиницами, ресторанами, кафе и магазинами</p>
+							<button class="card__btn btn btn--transparent btn--transparent_primary">
+								<svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+								<span class="btn__text">Ознакомиться с проектами</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="project-catalog__card card card--inline">
+
+						<div class="card__picture">
+							<img class="card__img" src="./img/project_garden.png" alt="Изображение садового дома">
+						</div>
+
+						<div class="card__content">
+							<h3 class="card__title">Садовое</h3>
+							<p class="card__description">Раздел с банями, беседками, альтанками, гаражами, кухнями, площадками, мангальными зонами и барбекю</p>
+							<button class="card__btn btn btn--transparent btn--transparent_primary">
+								<svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+								<span class="btn__text">Ознакомиться с проектами</span>
+							</button>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section section--indent compound bg_primary">
+			<div class="section__inner">
+				<div class="compound__header">
+					<h2 class="header_2">Из чего состоят наши <br>строения?</h2>
+				</div>
+				<div class="compound__cards">
+					<div class="card card--border" data-card="01">
+						<div class="card__content">
+							<div class="card__header card__header--img">
+								<h3 class="card__title">Создание <br>3D-макета</h3>
+								<img src="./img/compound-1.png" alt="Изображение состава">
+							</div>
+							<p class="card__description">
+								Это визуализация строения через экран гаджета. 
+								Макет создается индивидуально для клиента. 
+								Главная задача 3D-визуализации: 
+								учесть все детали в разработке и показать конечный вид проекта в оригинальном цвете и размере, 
+								используя актуальные материалы и наполнение внутри.
+							</p>
+						</div>
+					</div>
+
+					<div class="card card--border" data-card="02">
+						<div class="card__content">
+							<div class="card__header card__header--img">
+								<h3 class="card__title">Взятие замеров и <br>создание фундамента</h3>
+								<img src="./img/compound-2.png" alt="Изображение состава">
+							</div>
+							<p class="card__description">
+								Мы выезжаем на объект, обсуждаем задачу, выявляем потребность клиента и берем замеры. 
+								Строим несущую конструкцию, которая выдержит нагрузку от здания и погодных условий. 
+								Профессионалы используют лазерный уровень и качественные материалы, чтобы фундамент получился максимально крепким и ровным.
+							</p>
+						</div>
+					</div>
+
+					<div class="card card--border" data-card="03">
+						<div class="card__content">
+							<div class="card__header card__header--img">
+								<h3 class="card__title">Производство <br>конструкции</h3>
+								<img src="./img/compound-3.png" alt="Изображение состава">
+							</div>
+							<p class="card__description">
+								На одном из 4 заводов по всей территории Украины мы производим конструкцию по техническому заданию. 
+								Задание создается и согласуется с вами через прописанный договор в начале работ.
+							</p>
+						</div>
+					</div>
+
+					<div class="card card--border" data-card="04">
+						<div class="card__content">
+							<div class="card__header card__header--img">
+								<h3 class="card__title">Монтажные <br>работы</h3>
+								<img src="./img/compound-4.png" alt="Изображение состава">
+							</div>
+							<p class="card__description">
+								Выполним полный объем работ: от возведения фундамента до устройства кровли. 
+								В конечном итоге, можно будет сразу использовать строение, а не докупать материал на собственные деньги. 
+								Проведем сантехнические работы до полной сдачи проекта.
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="compound__sliderWrapper">
+					<div class="compound__slider slider" data-slider>
+						<div class="slider__item">
+							<img class="imgMax compound__img" src="./img/compound-slider-1.png" alt="Изображение цеха">
+						</div>
+						<div class="slider__item">
+							<img class="imgMax compound__img" src="./img/compound-slider-1.png" alt="Изображение цеха">
+						</div>
+					</div>
+				</div>
+
+				<div class="compound__buttons">
+					<button class="compound__button promo__button btn btn--primary">Перейти в каталог домов</button>
+					<button class="compound__button promo__button btn btn--transparent btn--transparent_primary">
+						<svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+						<span class="btn__text">Каталог бань</span>
+					</button>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section section--indent about">
+			<div class="about__images">
+				<div class="about__image about__image--top">
+					<img class="imgMax" src="./img/about-plan-top.png" alt="Фон схема 1">
+				</div>
+				<div class="about__image about__image--bottom">
+					<img class="imgMax" src="./img/about-plan-bottom.png" alt="Фон схема 2">
+				</div>
+			</div>
+
+			<div class="section__inner">
+				
+				<div class="about__header">
+					<h2 class="header_2">О компании TokarMebel</h2>
+				</div>
+
+				<div class="about__promo">
+
+					<div class="about__bg">
+						<picture>
+							<source media="(max-width: 768px)" srcset="./img/about-bg-min.png">
+							<img class="imgMax" src="./img/about-bg.png" alt="Фон цеха">
+						</picture>
+					</div>
+
+					<div class="about__author">
+						<img class="imgMax" src="./img/about-owner.png" alt="Создатель компании">
+					</div>
+
+					<div class="about__play about-play">
+						<a href="#" class="about-play__icon">
+							<img src="./img/icon-play.svg" alt="Иконка прогрывания видео">
+						</a>
+						<p class="about-play__text">Посмотреть короткое видео о компании (2:42 мин)</p>
+					</div>
+
+				</div>
+
+				<div class="about__card about-card">
+					<div class="about-card__img">
+						<img class="imgMax" src="./img/about-icon.svg" alt="Иконка о нас">
+					</div>
+					<div class="about-card__content">
+						<h3 class="about-card__author">Точилов Александр Николаевич</h3>
+						<p class="about-card__description">
+							Цитата о компании, пару слов от самого лица компании. 
+							Цитата о компании, пару слов от самого лица компании. 
+						</p>
+					</div>
+				</div>
+
+				<div class="about__advance">
+					<div class="about__item about-info">
+						<p class="about-info__title"> <span class="about-info__big">21</span> год</p>
+						<p class="about-info__description">Работаем на рынке Украины с 1998 года</p>
+					</div>
+
+					<div class="about__item about-info">
+						<p class="about-info__title"><span class="about-info__big">300+</span></p>
+						<p class="about-info__description">Позиций различных строений</p>
+					</div>
+
+					<div class="about__item about-info">
+						<p class="about-info__title">до <span class="about-info__big">7%</span></p>
+						<p class="about-info__description">Влажность просушенного дерева, что соответствует нормативам ГОСТ</p>
+					</div>
+
+					<div class="about__item about-info">
+						<p class="about-info__title">в <span class="about-info__big">1,5</span> раза</p>
+						<p class="about-info__description">Стоимость доставки ниже рыночной</p>
+					</div>
+				</div>
+
+				<div class="about__btn">
+					<button class="promo__button btn btn--primary">Подробнее о компании</button>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section section--indent three-types bg_primary">
+			<div class="section__inner">
+				<div class="three-types__header">
+					<h2 class="header_2">Мы разделяем 3 вида <br>строений</h2>
+				</div>
+				<div class="three-types__cards">
+					<div class="card three-types__card">
+						<div class="card__picture">
+							<img class="card__img imgMax" src="./img/three-types-1.png" alt="Жилое строения">
+						</div>
+
+						<div class="card__content">
+							<h3 class="card__title">Жилые строения</h3>
+							<ul class="card__list base-list">
+								<li class="base-list__item">Дома из профилированого бруса</li>
+								<li class="base-list__item">Дома из оцилиндрованого бруса</li>
+								<li class="base-list__item">Каркасные дома</li>
+								<li class="base-list__item">Дома из блока</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card three-types__card">
+						<div class="card__picture">
+							<img class="card__img imgMax" src="./img/three-types-2.png" alt="Коммерческие">
+						</div>
+
+						<div class="card__content">
+							<h3 class="card__title">Коммерческие</h3>
+							<ul class="card__list base-list">
+								<li class="base-list__item">Базы отдыха</li>
+								<li class="base-list__item">Гостинницы</li>
+								<li class="base-list__item">Рестораны</li>
+								<li class="base-list__item">Кафе</li>
+								<li class="base-list__item">Магазины</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card three-types__card">
+						<div class="card__picture">
+							<img class="card__img imgMax" src="./img/three-types-3.png" alt="Садовые и хоз">
+						</div>
+
+						<div class="card__content">
+							<h3 class="card__title">Садовые и хоз</h3>
+							<ul class="card__list base-list">
+								<li class="base-list__item">Деревянные	бани</li>
+								<li class="base-list__item">Беседки</li>
+								<li class="base-list__item">Альтанки</li>
+								<li class="base-list__item">Детские	игровые	площадки</li>
+								<li class="base-list__item">Гаражи</li>
+								<li class="base-list__item">Деревянные	детские	домики</li>
+								<li class="base-list__item">Мангальные	зоны и	барбекю</li>
+								<li class="base-list__item">Кухни</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section latest-article section--indent">
+			<div class="section__inner latest-article__inner sliderPrimary">
+				<div class="latest-article__header">
+					<h2 class="header_2">Последние статьи</h2>
+				</div>
+				<div class="latest-article__slider" data-slider="3, 2, 1">
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-1.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Готовый загородный дом или самостоятельное строительство?</h4>
+							<p class="article-card__description">
+								Купить или построить дом с нуля – неизбежный вопрос, 
+								когда возникает желание приобрести частную недвижимость за городом.
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-2.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Авторские проекты домов – почему эксклюзив выгоднее</h4>
+							<p class="article-card__description">
+								Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать индивидуальный. 
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-3.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Красивые дома: 100+ фото лучших проектов</h4>
+							<p class="article-card__description">
+								Современная малоэтажная застройка в России представлена как типовыми архитектурными решениями, популярными.
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-1.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Готовый загородный дом или самостоятельное строительство?</h4>
+							<p class="article-card__description">
+								Купить или построить дом с нуля – неизбежный вопрос, 
+								когда возникает желание приобрести частную недвижимость за городом.
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-2.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Авторские проекты домов – почему эксклюзив выгоднее</h4>
+							<p class="article-card__description">
+								Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать индивидуальный. 
+							</p>
+						</div>
+					</div>
+
+					<div class="latest-article__slide">
+						<div class="article-card">
+							<div class="article-card__picture">
+								<span class="article-card__category">Архитектура</span>
+								<img class="imgMax" src="./img/article-card-3.png" alt="Иконка дома">
+							</div>
+							<h4 class="article-card__title">Красивые дома: 100+ фото лучших проектов</h4>
+							<p class="article-card__description">
+								Современная малоэтажная застройка в России представлена как типовыми архитектурными решениями, популярными.
+							</p>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</section>
 

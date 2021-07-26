@@ -1,45 +1,61 @@
-<header class="section header">
+<header class="section header bg_primary">
     <div class="section__inner header__inner">
+        <div class="header__top">
 
-        <div class="header__logo">
-
-            <a class="logo" href="./">
-                <img class="logo__icon imgMax" src="./img/logo.png" alt="Логотип">
-            </a>
-
-            <div class="burger" data-burger="button">
-                <input class="burger__checkbox" type="checkbox">
-                <span class="burger__item burger__item--1"></span>
-                <span class="burger__item burger__item--2"></span>
-                <span class="burger__item burger__item--3"></span>
+            <div class="open-menu mobile-view" data-menu='open'>
+                <img class="imgMax" src="./img/burger-open.svg" alt="Иконка открытия меню">
             </div>
             
-        </div>
+            <div class="logo">
+                <a href="./" class="logo__img">
+                    <img class="imgMax" src="./img/logo.svg" alt="Логотип">
+                </a>
+                <span class="logo__description mobile-none">TokarCompany - производственно -строительная компания</span>
+            </div>
 
-        <div class="header__controls" data-burger="menu">
-            <nav class="header__links">
-                <ul class="header__menu menu">
-                    <li class="menu__item @@main"><a class="menu__link" href="./">Главная</a></li>
-                    <li class="menu__item @@components"><a class="menu__link" href="./components.html">Компоненты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./img/symbol/sprite.symbol.html" target="_blank">Спрайты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#" data-scroll=".scrollBlock">Скролл</a></li>
-                </ul>
-            </nav>
-            <div class="header__select">
+            <a class="phone-header mobile-view" href="tel: +3 80 (67) 175 56 30">
+                <img class="imgMax" src="./img/icon-phone.svg" alt="Иконка телефона">
+            </a>
 
-                <div class="c-select">
-                    <svg class='c-select__icon icon icon-arrow-down'><use xlink:href='img/sprite.svg#arrow-down'></use></svg>
-                    <select name="mySelect" data-customSelect>
-                        <option disabled>Выберите героя</option>
-                        <option value="Чебурашка">Чебурашка</option>
-                        <option selected value="Крокодил Гена">Крокодил Гена</option>
-                        <option value="Шапокляк">Шапокляк</option>
-                        <option value="Крыса Лариса">Крыса Лариса</option>
-                    </select>
+            <div class="social-contact mobile-none">
+                <span class="social-contact__text">Связаться напрямую:</span>
+                <div class="social-contact__icons">
+                    <a href="#" class="social-contact__icon">
+                        <img class="imgMax" src="./img/icon-telegram.svg" alt="Иконка телеграма">
+                    </a>
+                    <a href="#" class="social-contact__icon">
+                        <img class="imgMax" src="./img/icon-whatsapp.svg" alt="Иконка ватсапа">
+                    </a>
+                    <a href="#" class="social-contact__icon">
+                        <img class="imgMax" src="./img/icon-viber.svg" alt="Иконка вайбера">
+                    </a>
                 </div>
+            </div>
 
+            <div class="info-contact mobile-none">
+                <a href="tel: +3 80 (67) 175 56 30" class="info-contact__number">+3 80 (67) 175 56 30</a>
+                <span class="info-contact__workTime">с 09:00 до 18:00 (пн-вс)</span>
+            </div>
+
+            <div class="call-free mobile-none">
+                <a class="btn btn--primary btn--middle" href="#">Заказать звонок</a>
+                <span class="call-free__text">Бесплатно по Украине</span>
             </div>
         </div>
+        <div class="header__bottom mobile-none">
+            
+            <div class="btn-group">
+                <a href="./components.html" class="btn-group__link">Жилое</a>
+                <a href="#" class="btn-group__link">Коммерческое</a>
+                <a href="#" class="btn-group__link">Садовое</a>
+            </div>
 
+            <div class="header__links">
+                <button class="btn btn--transparent btn--transparent_dark">О компании</button>
+                <button class="btn btn--transparent btn--transparent_dark">Наши работы</button>
+                <button class="btn btn--transparent btn--transparent_dark">Контакты</button>
+            </div>
+
+        </div>
     </div>
 </header>

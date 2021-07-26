@@ -7,7 +7,10 @@ function initSlider() {
     let screen_sm = 768; // mobile-reverse
 
     $("[data-slider]").each(function(_, elem) {
+
+        let wrapper = $(elem).parent().parent();
         let items = elem.dataset.slider.split(",");
+
         if (items.length != 3) { // если в dataset слайдера нет 3 количеств элементов для 3 разрешений 
             items = [1, 1, 1]; // на всех разрешениях будет по 1 элементу
         }
@@ -15,13 +18,16 @@ function initSlider() {
             items = items.map(e => +e); // преобразуем строки в числа
         }
 
-        $(elem).lightSlider({
+        let mySlider = $(elem).lightSlider({
             item: items[0],
             slideMove: 1,
             slideMargin: "",
             controls: true,
             easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
             speed: 600,
+            onBeforeSlide: function (el) {
+                wrapper.find(".lSAction__info .current").text(el.getCurrentSlideCount());
+            },
             responsive: [
                 {
                     breakpoint: screen_sm,
@@ -36,7 +42,12 @@ function initSlider() {
                     }
                 }
             ]
-        }); 
+        });
+
+        let lsAction_info = `<div class='lSAction__info'> <span class='current'>${mySlider.getCurrentSlideCount()}</span> / <span class='total'>${mySlider.getTotalSlideCount()}</span> </div>`;
+        wrapper.find(".lSAction").append(lsAction_info);
+
+
     });
 
 }

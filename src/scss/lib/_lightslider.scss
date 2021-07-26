@@ -401,7 +401,8 @@
 // ===== КНОПКИ ВНИЗУ СЛАЙДЕРА ========== //
 
 .lSPager {
-    //display: none;
+    display: none;
+    
     @media ($media_sm) {
         display: none;
     }
@@ -420,82 +421,84 @@
     overflow: visible;
 
     @media ($media_sm) {
-        width: 85%;
-        margin: 0 auto;
+        //width: 85%;
+        //margin: 0 auto;
     }
+}
+
+.lSAction {
+    position: absolute;
+    z-index: 1;
+    bottom: 2rem;
+    right: 2rem;
+
+    @media ($media_sm) {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lSAction>a {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: #fff;
-    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
     opacity: 1;
-    z-index: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s ease-in-out;
-    background-image: url(../img/slide_arrow.svg);
+    
+    background-image: url(../img/arrow-slider.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 0;
 
-    margin-top: -1.7rem;
-
-    @media ($media_xs) {
-        width: 1.7rem;
-        height: 1.7rem;
-        background-size: 50%;
-    }
-
-    &:hover {
-        background-color: rgb(250, 250, 250);
-    }
 }
 
 .lSAction>.lSPrev, .lSAction>.lSNext {
+    position: static;
     background-position: center;
 }
 
+.lSAction__info {
+    color: $color_white;
+    font-weight: 600;
+    text-align: center;
+    min-width: 2.5rem;
+}
+
 .lSAction>.lSPrev {
-    transform: rotateY(180deg);
-    left: -3rem;
-    @media ($media_sm) {
-        left: -2.8rem;
-    }
-    @media ($media_xs) {
-        left: -2rem;
-    }
+
 }
 
 .lSAction>.lSNext {
-    right: -3rem;
-    @media ($media_sm) {
-        right: -2.8rem;
-    }
-    @media ($media_xs) {
-        right: -2rem;
-    }
-}
-
-.lSSlideOuter .lSPager.lSpg > li a {
-    background-color: $color_slider_dot;
-    border-radius: 0.5rem;
-    height: 0.625rem;
-    width: 1.75rem;
-    z-index: 0;
-}
-
-.lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a {
-    background-color: $color_slider_dot_active;
-}
-
-.lSSlideOuter .lSPager.lSpg {
-    margin-top: 1.7rem !important;
+    transform: rotateY(180deg);
+    order: 3;
 }
 
 .lightSlider {
-    height: auto !important; // В СЛУЧАЕ, ЕСЛИ ВЫСОТА СТАВИТСЯ НЕ ВЕРНО ЧЕРЕЗ JS
+    //height: auto !important; // В СЛУЧАЕ, ЕСЛИ ВЫСОТА СТАВИТСЯ НЕ ВЕРНО ЧЕРЕЗ JS
+}
+
+.sliderPrimary {
+
+    .lSAction>a {
+        background-image: url(../img/arrow-slider-primary.svg);
+    }
+
+    .lSAction {
+        top: -2rem;
+        transform: translateY(-100%);
+        bottom: unset;
+
+        @media ($media_sm) {
+            bottom: 0;
+            top: unset;
+            left: 50%;
+            transform: translate(-50%, calc(100% + 0.5rem));
+        }
+    }
+
+    .lSAction__info {
+        color: $color_primary;
+    }
 }

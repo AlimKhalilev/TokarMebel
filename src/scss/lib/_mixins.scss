@@ -4,9 +4,12 @@
 
 :root {
     --section_indent: 3rem;
-    --header-min-height: 5rem;
+    --section_indent_max: 9rem;
+    --header-min-height: 4rem;
+    --menu-details-space: 1rem;
 
     @media ($media_sm) {
+        --section_indent_max: 3.75rem;
         --section_indent: 2rem;
     }
 }
@@ -20,13 +23,25 @@
 }
 
 html, body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     line-height: 1.5;
-    background-color: $color_body_bg;
+    color: $color_black_main;
     font-size: 16px;
 
-    @media ($media_sm) {
+    @media ($media_xl) {
         font-size: 15px;
+    }
+
+    @media ($media_lg) {
+        font-size: 14px;
+    }
+
+    @media ($media_md) {
+        font-size: 13px;
+    }
+
+    @media ($media_sm) {
+        font-size: 16px;
     }
 
     min-height: 100vh;
@@ -81,7 +96,11 @@ html, body {
 }
 
 .section {
-    margin-top: var(--section_indent);
+    //margin-top: var(--section_indent);
+
+    &--indent {
+        padding: var(--section_indent_max) 0;
+    }
 
     &--footer {
         margin-top: auto;
@@ -107,6 +126,324 @@ html, body {
 
 .imgMax {
     max-width: 100%;
+}
+
+.header_1 {
+    font-weight: 800;
+    font-size: 2.375rem;
+    line-height: 1.33;
+
+    @media ($media_sm) {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+.header_2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.33;
+
+    @media ($media_sm) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.bg_primary {
+    background-color: $color_body_bg;
+}
+
+.mobile-none {
+    @media ($media_sm) {
+        display: none;
+    }
+}
+
+.mobile-view {
+    display: none;
+
+    @media ($media_sm) {
+        display: block;
+    }
+}
+
+.base-list {
+
+    // .base-list__item
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        line-height: 1.8;
+
+        &::before {
+            position: absolute;
+            width: 0.625rem;
+            height: 0.625rem;
+            background: url("../../img/arrow-list.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: "";
+            left: 0;
+        }
+    }
+}
+
+.about-info {
+
+    // .about-info__title
+
+    &__title {
+        font-size: 2.25rem;
+        color: $color_primary;
+
+        padding-bottom: 1.8rem;
+        margin-bottom: 1.8rem;
+        border-bottom: 2px solid;
+    }
+
+    // .about-info__small
+
+    &__big {
+        font-size: 3.75rem;
+    }
+
+    // .about-info__description
+
+    &__description {
+        line-height: 1.87;
+        font-weight: 300;
+    }
+}
+
+.about-card {
+    background-color: $color_white;
+    box-shadow: 0px 0px 2rem rgba(43, 42, 40, 0.08);
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+
+    display: flex;
+    max-width: 34rem;
+
+    @media ($media_sm) {
+        max-width: 100%;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    // .about-card__img
+
+    &__img {
+        width: 3.375rem;
+        min-width: 3.375rem;
+        height: 3.375rem;
+        margin-right: 1.375rem;
+
+        @media ($media_sm) {
+            display: none;
+        }
+    }
+
+    // .about-card__content
+
+    &__content {
+        
+    }
+
+    // .about-card__author
+
+    &__author {
+        font-weight: 400;
+        font-size: 1.5rem;
+
+        @media ($media_sm) {
+            text-align: center;
+            margin-bottom: 0.3rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    // .about-card__description
+
+    &__description {
+        @media ($media_sm) {
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+    }
+}
+
+.about-play {
+    max-width: 8.5rem;
+
+    // .about-play__icon
+
+    &__icon {
+        max-width: 4rem;
+        min-width: 4rem;
+        min-height: 4rem;
+        margin: 0 auto;
+
+        @include cursorPointer;
+        display: block;
+    }
+
+    // .about-play__text
+
+    &__text {
+        color: $color_white;
+        font-size: 0.8rem;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
+
+.slider {
+
+    // .slider__item
+
+    &__item {
+        padding: 0.2rem;
+
+        picture {
+            display: flex;
+        }
+    }
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+
+    // .logo__img
+
+    &__img {
+        width: 15.625rem;
+
+        @media ($media_sm) {
+            width: 11rem;
+        }
+
+        picture {
+            display: flex;
+        }
+    }
+
+    // .logo__description
+
+    &__description {
+        margin-left: 2rem;
+        max-width: 15rem;
+
+        font-size: 0.82rem;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+}
+
+.social-contact {
+
+    // .social-contact__text
+
+    &__text {
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0.25rem;
+    }
+
+    // .social-contact__icons
+
+    &__icons {
+        display: flex;
+
+        @media ($media_sm) {
+            justify-content: center;
+        }
+    }
+
+    // .social-contact__icon
+
+    &__icon {
+        width: 1.625rem;
+        height: 1.625rem;
+
+        &:not(:last-child) {
+            margin-right: 0.25rem;
+        }
+    }
+}
+
+.info-contact {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media ($media_sm) {
+        align-items: center;
+    }
+
+    // .info-contact__number
+
+    &__number {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+
+        color: $color_black_main;
+        text-decoration: none;
+
+        @media ($media_sm) {
+            font-size: 1.1rem;
+        }
+    }
+
+    // .info-contact__workTime
+
+    &__workTime {
+        font-size: 0.82rem;
+    }
+}
+
+.call-free {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .call-free__text
+
+    &__text {
+        font-size: 0.7rem;
+        margin-top: 0.4rem;
+    }
+}
+
+.btn-group {
+    display: inline-flex;
+    background: $color_group_button;
+    box-shadow: 0px 0px 1.25rem rgba(43, 42, 40, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.625rem 0;
+
+    // .btn-group__link
+
+    &__link {
+        display: inline-block;
+        color: $color_white;
+        text-decoration: none;
+        font-weight: 700;
+
+        padding: 0.9rem 3.75rem;
+        
+        &:not(:last-child) {
+            border-right: 1px dashed rgba(229, 235, 242, 0.4);
+        }
+    }
 }
 
 // === / Mixins ===

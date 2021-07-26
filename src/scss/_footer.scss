@@ -1,18 +1,111 @@
 // === Footer [ Стили для футера, используемые на всех страницах ] ===
 
 .footer {
-    background-color: $color_primary;
-    padding: 1.5rem 0;
-    
+
+    // @media ($media_sm) {
+    //     display: none;
+    // }
+
+    // .footer__inner
+
     &__inner {
-        display: flex;
-        justify-content: space-between;
-    
-        p {
-            color: $color_white;
+        @media ($media_sm) {
+            max-width: 100%;
+            min-width: 100%;
         }
     }
-    
+
+    // .footer__logo
+
+    &__logo {
+        @media ($media_sm) {
+            flex-direction: column;
+
+            .logo__description {
+                text-align: center;
+                margin: 0.7rem 0 0 0;
+            }
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        display: flex;
+        padding: 5.625rem 0 3.75rem 0;
+
+        @media ($media_sm) {
+            padding: 4rem 0 2rem 0;
+        }
+    }
+
+    // .footer__left
+
+    &__left {
+        margin-right: 3.75rem;
+    }
+
+    // .footer__menus
+
+    &__menus {
+        display: flex;
+        margin-top: 2.5rem;
+    }
+
+    // .footer__menu
+
+    &__menu {
+        flex-basis: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .footer__right
+
+    &__right {
+        @media ($media_sm) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    // .footer__item
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2.8rem;
+
+            @media ($media_sm) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    // .footer__links
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .footer__rightsReserve
+
+    &__rightsReserve {
+        border-top: 1px solid $color_footer_divider;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    // .footer__reserved
+
+    &__reserved {
+        font-size: 0.82rem;
+        font-weight: 300;
+    }
 }
 
 // === / Footer ===

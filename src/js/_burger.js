@@ -1,17 +1,16 @@
 function initBurgerMenu() {
-    let button_burger = $("[data-burger='button']");
-    let menu_burger = $("[data-burger='menu']");
-    let overlay = document.querySelector(".overlay--burger");
+    let menu = $(".menu");
+    let menu_open = $("[data-menu='open']");
+    let menu_close = $("[data-menu='close']");
     
-    $(button_burger).click(() => {
-        menu_burger.slideToggle('normal');
-        overlay.classList.toggle("visible");
-        g_body.classList.toggle("hideScroll");
+    $(menu_open).click(() => {
+        menu.addClass("menu--visible");
+        g_body.classList.add("hideScroll");
     });
 
-    overlay.addEventListener("click", () => {
-        $(button_burger).click();
-        $(button_burger).find("input").prop('checked', false);
+    $(menu_close).click(() => {
+        menu.removeClass("menu--visible");
+        g_body.classList.remove("hideScroll");
     });
 }
 

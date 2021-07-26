@@ -10,7 +10,7 @@
 
         <section class="section section--underHeader section--beforeFooter components">
             <div class="section__inner components__inner">
-                <div class="components__elem input-group">
+                <!-- <div class="components__elem input-group">
                     <span class="input-group__label">Checkbox button</span>
 
                     <div class="input-group__elems">
@@ -72,19 +72,40 @@
                         </a>
 
                     </div>
-                </div>
+                </div> -->
 
                 <div class="components__elem input-group">
                     <span class="input-group__label">Buttons</span>
 
                     <div class="input-group__elems input-group__elems--wrap">
-                        <div class="input-group__elem">
+                        <!-- <div class="input-group__elem">
                             <button class="btn">Кнопка</button>
+                        </div> -->
+
+                        <div class="input-group__elem">
+                            <button class="btn btn--primary">Перейти в каталог домов</button>
                         </div>
 
                         <div class="input-group__elem">
-                            <button class="btn btn--primary">Кнопка базовая</button>
+                            <button class="btn btn--transparent btn--transparent_dark">О компании</button>
                         </div>
+
+                        <div class="input-group__elem">
+                            <button class="btn btn--transparent btn--transparent_primary">
+                                <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                                <span class="btn__text">Каталог бань</span>
+                            </button>
+                        </div>
+
+                        <div class="input-group__elem">
+                            <button class="btn btn--transparent btn--transparent_primary">
+                                <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke btn__icon--stroke_rotate"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                                <span class="btn__text">Вернуться назад</span>
+                            </button>
+                        </div>
+
+
+
 
                         <div class="input-group__elem">
                             <a href="#" class="btn btn--primary">Кнопка-ссылка базовая</a>
@@ -137,10 +158,6 @@
                             <button class="btn btn--bordered btn--bordered_primary">
                                 <svg class="icon icon-loupe btn__icon"><use xlink:href="img/sprite.svg#loupe"></use></svg>
                             </button>
-                        </div>
-
-                        <div class="input-group__elem">
-                            <button class="btn btn--transparent btn--transparent_danger">Кнопка прозрачная неудача!</button>
                         </div>
 
                         <div class="input-group__elem">
@@ -210,22 +227,6 @@
 								</select>
 							</div>
 						</div>
-
-						<!-- <div class="c-select">
-							<div class="c-select__inner c-select__inner--open"> 
-								<div class="c-select__container c-select__header">
-									<span class="c-select__title">Значение 1</span>
-									<svg class='c-select__icon icon icon-arrow-down'><use xlink:href='img/sprite.svg#arrow-down'></use></svg>
-								</div>
-								<div class="c-select__container c-select__body">
-									<div class="c-select__items">
-										<li class="c-select__item" selected>Значение 1</li>
-										<li class="c-select__item" disabled>Значение 2</li>
-										<li class="c-select__item">Значение 3</li>
-									</div>
-								</div>
-							</div>
-						</div> -->
 
                     </div>
                 </div>
@@ -299,6 +300,478 @@
                                     <div class="content-box">Привет, тут какое-то содержание с огромным текстом, лучше нужно было использовать lorem!</div>
                                 </div>
                             </div>
+						</div>
+
+                    </div>
+                </div>
+
+                <div class="components__elem input-group">
+                    <span class="input-group__label">Остальные элементы</span>
+
+                    <div class="input-group__elems">
+
+						<div class="input-group__elem">
+                            <h1 class="header_1">Производим и устанавливаем строения разных видов в Украине</h1>
+                            <h2 class="header_2">Почему выбирают нас:</h2>
+						</div>
+
+                        <div class="input-group__elem">
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/project_living.png" alt="Изображение жилого дома">
+                                </div>
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Жилое</h3>
+                                    <p class="card__description">Раздел с домами, дачами, коттеджами, виллами, усадьбами и особняками</p>
+                                    <button class="card__btn btn btn--transparent btn--transparent_primary">
+                                        <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                                        <span class="btn__text">Ознакомиться с проектами</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/project_commercial.png" alt="Изображение коммерческого дома">
+                                </div>
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Коммерческое</h3>
+                                    <p class="card__description">Раздел с базами отдыха, гостиницами, ресторанами, кафе и магазинами</p>
+                                    <button class="card__btn btn btn--transparent btn--transparent_primary">
+                                        <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                                        <span class="btn__text">Ознакомиться с проектами</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card card--inline">
+
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/project_garden.png" alt="Изображение садового дома">
+                                </div>
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Садовое</h3>
+                                    <p class="card__description">Раздел с банями, беседками, альтанками, гаражами, кухнями, площадками, мангальными зонами и барбекю</p>
+                                    <button class="card__btn btn btn--transparent btn--transparent_primary">
+                                        <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                                        <span class="btn__text">Ознакомиться с проектами</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="card card--border" data-card="01">
+                                <div class="card__content">
+                                    <div class="card__header card__header--img">
+                                        <h3 class="card__title">Создание 3D-макета</h3>
+                                        <img src="./img/compound-1.png" alt="Изображение состава">
+                                    </div>
+                                    <p class="card__description">
+                                        Это визуализация строения через экран гаджета. 
+                                        Макет создается индивидуально для клиента. 
+                                        Главная задача 3D-визуализации: 
+                                        учесть все детали в разработке и показать конечный вид проекта в оригинальном цвете и размере, 
+                                        используя актуальные материалы и наполнение внутри.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card--border" data-card="02">
+                                <div class="card__content">
+                                    <div class="card__header card__header--img">
+                                        <h3 class="card__title">Взятие замеров и создание фундамента</h3>
+                                        <img src="./img/compound-2.png" alt="Изображение состава">
+                                    </div>
+                                    <p class="card__description">
+                                        Мы выезжаем на объект, обсуждаем задачу, выявляем потребность клиента и берем замеры. 
+                                        Строим несущую конструкцию, которая выдержит нагрузку от здания и погодных условий. 
+                                        Профессионалы используют лазерный уровень и качественные материалы, чтобы фундамент получился максимально крепким и ровным.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card--border" data-card="03">
+                                <div class="card__content">
+                                    <div class="card__header card__header--img">
+                                        <h3 class="card__title">Производство конструкции</h3>
+                                        <img src="./img/compound-3.png" alt="Изображение состава">
+                                    </div>
+                                    <p class="card__description">
+                                        На одном из 4 заводов по всей территории Украины мы производим конструкцию по техническому заданию. 
+                                        Задание создается и согласуется с вами через прописанный договор в начале работ.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card--border" data-card="04">
+                                <div class="card__content">
+                                    <div class="card__header card__header--img">
+                                        <h3 class="card__title">Монтажные работы</h3>
+                                        <img src="./img/compound-4.png" alt="Изображение состава">
+                                    </div>
+                                    <p class="card__description">
+                                        Выполним полный объем работ: от возведения фундамента до устройства кровли. 
+                                        В конечном итоге, можно будет сразу использовать строение, а не докупать материал на собственные деньги. 
+                                        Проведем сантехнические работы до полной сдачи проекта.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card--border" >
+                                <div class="card__content">
+                                    <h2 class="header_2">Почему выбирают нас:</h2>
+
+                                    <div class="choose-card">
+                                        <div class="choose-card__icon">
+                                            <img src="./img/choose-icon-1.svg" alt="Эксклюзивный дизайн">
+                                        </div>
+                                        <h4 class="choose-card__title">Эксклюзивный дизайн</h4>
+                                        <p class="choose-card__description">Не имеющий аналогов в Украине</p>
+                                    </div>
+
+                                    <div class="choose-card">
+                                        <div class="choose-card__icon">
+                                            <img src="./img/choose-icon-2.svg" alt="Разработка модели">
+                                        </div>
+                                        <h4 class="choose-card__title">Разработка модели</h4>
+                                        <p class="choose-card__description">Индивидуальной с помощью 3D-визуализации в нашем приложении</p>
+                                    </div>
+
+                                    <div class="choose-card">
+                                        <div class="choose-card__icon">
+                                            <img src="./img/choose-icon-3.svg" alt="Сертификаты качества">
+                                        </div>
+                                        <h4 class="choose-card__title">Сертификаты качества</h4>
+                                        <p class="choose-card__description">Подтверждают наши материалы и комплектующие</p>
+                                    </div>
+
+                                    <div class="choose-card">
+                                        <div class="choose-card__icon">
+                                            <img src="./img/choose-icon-4.svg" alt="Работа под ключ">
+                                        </div>
+                                        <h4 class="choose-card__title">Работа под ключ</h4>
+                                        <p class="choose-card__description">В среднем за Х дней от установки фундамента до сдачи объекта в эксплуатацию</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <ul class="base-list">
+                                <li class="base-list__item">Базы отдыха</li>
+                                <li class="base-list__item">Гостинницы</li>
+                                <li class="base-list__item">Рестораны</li>
+                                <li class="base-list__item">Кафе</li>
+                                <li class="base-list__item">Магазины</li>
+                            </ul>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/three-types-1.png" alt="Жилое строения">
+                                </div>
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Жилые строения</h3>
+                                    <ul class="card__list base-list">
+                                        <li class="base-list__item">Базы отдыха</li>
+                                        <li class="base-list__item">Гостинницы</li>
+                                        <li class="base-list__item">Рестораны</li>
+                                        <li class="base-list__item">Кафе</li>
+                                        <li class="base-list__item">Магазины</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/three-types-2.png" alt="Коммерческие">
+                                </div>
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Коммерческие</h3>
+                                    <ul class="card__list base-list">
+                                        <li class="base-list__item">Базы отдыха</li>
+                                        <li class="base-list__item">Гостинницы</li>
+                                        <li class="base-list__item">Рестораны</li>
+                                        <li class="base-list__item">Кафе</li>
+                                        <li class="base-list__item">Магазины</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/three-types-3.png" alt="Садовые и хоз">
+                                </div>
+
+                                <div class="card__content">
+                                    <h3 class="card__title">Садовые и хоз</h3>
+                                    <ul class="card__list base-list">
+                                        <li class="base-list__item">Базы отдыха</li>
+                                        <li class="base-list__item">Гостинницы</li>
+                                        <li class="base-list__item">Рестораны</li>
+                                        <li class="base-list__item">Кафе</li>
+                                        <li class="base-list__item">Магазины</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="about-card">
+                                <div class="about-card__img">
+                                    <img class="imgMax" src="./img/about-icon.svg" alt="Иконка о нас">
+                                </div>
+                                <div class="about-card__content">
+                                    <h3 class="about-card__author">Точилов Александр Николаевич</h3>
+                                    <p class="about-card__description">
+                                        Цитата о компании, пару слов от самого лица компании. 
+                                        Цитата о компании, пару слов от самого лица компании. 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-info">
+                                <p class="about-info__title"> <span class="about-info__big">21</span> год</p>
+                                <p class="about-info__description">Работаем на рынке Украины с 1998 года</p>
+                            </div>
+
+                            <div class="about-info">
+                                <p class="about-info__title"><span class="about-info__big">300+</span></p>
+                                <p class="about-info__description">Позиций различных строений</p>
+                            </div>
+
+                            <div class="about-info">
+                                <p class="about-info__title">до <span class="about-info__big">7%</span></p>
+                                <p class="about-info__description">Влажность просушенного дерева, что соответствует нормативам ГОСТ</p>
+                            </div>
+
+                            <div class="about-info">
+                                <p class="about-info__title">в <span class="about-info__big">1,5</span> раза</p>
+                                <p class="about-info__description">Стоимость доставки ниже рыночной</p>
+                            </div>
+
+                            <div class="about-play">
+                                <a href="#" class="about-play__icon">
+                                    <img src="./img/icon-play.svg" alt="Иконка прогрывания видео">
+                                </a>
+                                <p class="about-play__text">Посмотреть короткое видео о компании (2:42 мин)</p>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-card__picture">
+                                    <span class="article-card__category">Архитектура</span>
+                                    <img class="imgMax" src="./img/article-card-1.png" alt="Иконка дома">
+                                </div>
+                                <h4 class="article-card__title">Готовый загородный дом или самостоятельное строительство?</h4>
+                                <p class="article-card__description">
+                                    Купить или построить дом с нуля – неизбежный вопрос, 
+                                    когда возникает желание приобрести частную недвижимость за городом.
+                                </p>
+                            </div>
+
+                            <div class="logo">
+                                <a href="#" class="logo__img">
+                                    <img class="imgMax" src="./img/logo.svg" alt="Логотип">
+                                </a>
+                                <span class="logo__description">TokarCompany - производственно -строительная компания</span>
+                            </div>
+
+                            <div class="social-contact">
+                                <span class="social-contact__text">Связаться напрямую:</span>
+                                <div class="social-contact__icons">
+                                    <a href="#" class="social-contact__icon">
+                                        <img class="imgMax" src="./img/icon-telegram.svg" alt="Иконка телеграма">
+                                    </a>
+                                    <a href="#" class="social-contact__icon">
+                                        <img class="imgMax" src="./img/icon-whatsapp.svg" alt="Иконка ватсапа">
+                                    </a>
+                                    <a href="#" class="social-contact__icon">
+                                        <img class="imgMax" src="./img/icon-viber.svg" alt="Иконка вайбера">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="info-contact">
+                                <a href="tel: +3 80 (67) 175 56 30" class="info-contact__number">+3 80 (67) 175 56 30</a>
+                                <span class="info-contact__workTime">с 09:00 до 18:00 (пн-вс)</span>
+                            </div>
+
+                            <div class="call-free">
+                                <a class="btn btn--primary btn--middle" href="#">Заказать звонок</a>
+                                <span class="call-free__text">Бесплатно по Украине</span>
+                            </div>
+
+                            <div class="btn-group">
+                                <a href="#" class="btn-group__link">Жилое</a>
+                                <a href="#" class="btn-group__link">Коммерческое</a>
+                                <a href="#" class="btn-group__link">Садовое</a>
+                            </div>
+                            
+                            <ul class="menu-list">
+                                <li class="menu-list__item">Дома из профилированого бруса</li>
+                                <li class="menu-list__item">Дома из оцилиндрованого бруса</li>
+                                <li class="menu-list__item">Каркасные дома</li>
+                                <li class="menu-list__item">Дома из блока</li>
+                            </ul>
+
+                            <div class="menu bg_primary">
+                                <div class="menu__header">
+                                    <h4 class="menu__title">Меню</h4>
+                                    <div class="menu__icon">
+                                        <img class="imgMax" src="./img/burger-close.svg" alt="Иконка закрытого меню">
+                                    </div>
+                                </div>
+                                <div class="menu__body">
+                                    <div class="menu__links">
+                                        <div class="menu-details">
+                                            <div class="menu-details__item details" data-details>
+                                                <div class="menu-details__header details__header">
+                                                    <a class="menu-details__title">Жилое</a>
+                                                </div>
+                                                <div class="menu-details__body details__body">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-list__item">Дома из профилированого бруса</li>
+                                                        <li class="menu-list__item">Дома из оцилиндрованого бруса</li>
+                                                        <li class="menu-list__item">Каркасные дома</li>
+                                                        <li class="menu-list__item">Дома из блока</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="menu-details__item details" data-details>
+                                                <div class="menu-details__header details__header">
+                                                    <a class="menu-details__title">Коммерческое</a>
+                                                </div>
+                                                <div class="menu-details__body details__body">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-list__item">Базы отдыха</li>
+                                                        <li class="menu-list__item">Гостинницы</li>
+                                                        <li class="menu-list__item">Рестораны</li>
+                                                        <li class="menu-list__item">Кафе</li>
+                                                        <li class="menu-list__item">Магазины</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="menu-details__item details" data-details>
+                                                <div class="menu-details__header details__header">
+                                                    <a class="menu-details__title">Садовое</a>
+                                                </div>
+                                                <div class="menu-details__body details__body">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-list__item">Деревянные	бани</li>
+                                                        <li class="menu-list__item">Беседки</li>
+                                                        <li class="menu-list__item">Альтанки</li>
+                                                        <li class="menu-list__item">Детские	игровые	площадки</li>
+                                                        <li class="menu-list__item">Гаражи</li>
+                                                        <li class="menu-list__item">Деревянные	детские	домики</li>
+                                                        <li class="menu-list__item">Мангальные	зоны и	барбекю</li>
+                                                        <li class="menu-list__item">Кухни</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="menu-details__item menu-details__item--empty details" data-details>
+                                                <div class="menu-details__header details__header">
+                                                    <a href="#" class="menu-details__title">О компании</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-details__item menu-details__item--empty details" data-details>
+                                                <div class="menu-details__header details__header">
+                                                    <a href="#" class="menu-details__title">Наши работы</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu__footer">
+
+                                        <div class="menu__elem social-contact">
+                                            <span class="social-contact__text">Связаться напрямую:</span>
+                                            <div class="social-contact__icons">
+                                                <a href="#" class="social-contact__icon">
+                                                    <img class="imgMax" src="./img/icon-telegram.svg" alt="Иконка телеграма">
+                                                </a>
+                                                <a href="#" class="social-contact__icon">
+                                                    <img class="imgMax" src="./img/icon-whatsapp.svg" alt="Иконка ватсапа">
+                                                </a>
+                                                <a href="#" class="social-contact__icon">
+                                                    <img class="imgMax" src="./img/icon-viber.svg" alt="Иконка вайбера">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu__elem info-contact">
+                                            <a href="tel: +3 80 (67) 175 56 30" class="info-contact__number">+3 80 (67) 175 56 30</a>
+                                            <span class="info-contact__workTime">с 09:00 до 18:00 (пн-вс)</span>
+                                        </div>
+
+                                        <div class="menu__elem call-free">
+                                            <a class="btn btn--primary btn--middle" href="#">Заказать звонок</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-details">
+                                <div class="menu-details__item details" data-details>
+                                    <div class="menu-details__header details__header">
+                                        <a class="menu-details__title">Жилое</a>
+                                    </div>
+                                    <div class="menu-details__body details__body">
+                                        <ul class="menu-list">
+                                            <li class="menu-list__item">Дома из профилированого бруса</li>
+                                            <li class="menu-list__item">Дома из оцилиндрованого бруса</li>
+                                            <li class="menu-list__item">Каркасные дома</li>
+                                            <li class="menu-list__item">Дома из блока</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-details__item details" data-details>
+                                    <div class="menu-details__header details__header">
+                                        <a class="menu-details__title">Коммерческое</a>
+                                    </div>
+                                    <div class="menu-details__body details__body">
+                                        <ul class="menu-list">
+                                            <li class="menu-list__item">Базы отдыха</li>
+                                            <li class="menu-list__item">Гостинницы</li>
+                                            <li class="menu-list__item">Рестораны</li>
+                                            <li class="menu-list__item">Кафе</li>
+                                            <li class="menu-list__item">Магазины</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-details__item details" data-details>
+                                    <div class="menu-details__header details__header">
+                                        <a class="menu-details__title">Садовое</a>
+                                    </div>
+                                    <div class="menu-details__body details__body">
+                                        <ul class="menu-list">
+                                            <li class="menu-list__item">Деревянные	бани</li>
+                                            <li class="menu-list__item">Беседки</li>
+                                            <li class="menu-list__item">Альтанки</li>
+                                            <li class="menu-list__item">Детские	игровые	площадки</li>
+                                            <li class="menu-list__item">Гаражи</li>
+                                            <li class="menu-list__item">Деревянные	детские	домики</li>
+                                            <li class="menu-list__item">Мангальные	зоны и	барбекю</li>
+                                            <li class="menu-list__item">Кухни</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-details__item menu-details__item--empty details" data-details>
+                                    <div class="menu-details__header details__header">
+                                        <a href="#" class="menu-details__title">О компании</a>
+                                    </div>
+                                </div>
+                                <div class="menu-details__item menu-details__item--empty details" data-details>
+                                    <div class="menu-details__header details__header">
+                                        <a href="#" class="menu-details__title">Наши работы</a>
+                                    </div>
+                                </div>
+                            </div>
+
 						</div>
 
                     </div>
