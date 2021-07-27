@@ -151,7 +151,6 @@ function initSlider() {
             easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
             speed: 600,
             onBeforeSlide: function (el) {
-                //console.log(el, currentElemCount);
                 wrapper.find(".lSAction__info .current").text(el.getCurrentSlideCount());
             },
             responsive: [
@@ -400,8 +399,11 @@ initDropdown();
     let basePixel = 16;
 
     document.querySelectorAll("[adaptImg]").forEach(item => {
-        item.style.width = `${(item.clientWidth / basePixel)}rem`;
-        item.style.height = `${(item.clientHeight / basePixel)}rem`;
+        let width = item.naturalWidth / basePixel;
+        let height = item.naturalHeight / basePixel;
+
+        item.style.width = `${width}rem`;
+        //item.style.height = `${height}rem`;
     });
 }
 

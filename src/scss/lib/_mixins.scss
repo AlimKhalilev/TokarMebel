@@ -102,6 +102,10 @@ html, body {
         padding: var(--section_indent_max) 0;
     }
 
+    &--spaceBottom {
+        padding-bottom: var(--section_indent_max);
+    }
+
     &--footer {
         margin-top: auto;
     }
@@ -398,6 +402,11 @@ html, body {
         &:not(:last-child) {
             margin-right: 0.25rem;
         }
+
+        &--max {
+            width: 2.875rem;
+            height: 2.875rem;
+        }
     }
 }
 
@@ -514,6 +523,8 @@ html, body {
 
 .breadcrumb {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -0.4rem;
 
     // .breadcrumb__link
 
@@ -521,12 +532,105 @@ html, body {
         color: $color_secondary;
         text-decoration: none;
         font-size: 0.8rem;
+        white-space: nowrap;
+        margin-bottom: 0.4rem;
 
         &:not(:last-child) {
             &::after {
                 content: "/";
                 padding: 0 0.4rem;
             }
+        }
+    }
+}
+
+.contact-info {
+
+    // .contact-info__content
+
+    &__content {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+
+        @media ($media_sm) {
+            flex-direction: column;
+        }
+    }
+
+    // .contact-info__item
+
+    &__item {
+        font-weight: 300;
+
+        // .contact-info__item--distance
+
+        &--distance {
+            min-width: 10rem;
+        }
+
+        // .contact-info__item--bold
+
+        &--bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.contact-address {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // .contact-address__title
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    // .contact-address__value
+
+    &__value {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin: 0.8rem 0 1rem 0;
+        display: inline-block;
+    }
+
+    // .contact-address__link
+
+    &__link {
+
+    }
+}
+
+.buildInfo {
+    display: flex;
+    align-items: center;
+
+    // .buildInfo__picture
+
+    &__picture {
+
+        picture {
+            display: flex;
+        }
+    }
+
+    // .buildInfo__value
+
+    &__value {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+
+        // .buildInfo__value--min
+
+        &--min {
+            margin-left: 0.7rem;
+            font-size: 0.9rem;
         }
     }
 }

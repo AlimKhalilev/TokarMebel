@@ -40,7 +40,6 @@ function initSlider() {
             easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
             speed: 600,
             onBeforeSlide: function (el) {
-                //console.log(el, currentElemCount);
                 wrapper.find(".lSAction__info .current").text(el.getCurrentSlideCount());
             },
             responsive: [
