@@ -151,6 +151,7 @@ html, body {
     @media ($media_sm) {
         font-size: 1.5rem;
         text-align: center;
+        font-weight: 800;
 
         &--left {
             text-align: left;
@@ -164,6 +165,7 @@ html, body {
     // .header-relative__link
 
     &__link {
+        display: flex;
         position: absolute;
         right: 0;
         top: 50%;
@@ -195,6 +197,20 @@ html, body {
 }
 
 .base-list {
+
+    // .base-list--max
+
+    &--max {
+
+        .base-list__item {
+            font-size: 1.125rem;
+
+            &::before {
+                width: 0.75rem;
+                height: 0.75rem;
+            }
+        }
+    }
 
     // .base-list__item
 
@@ -477,48 +493,64 @@ html, body {
     }
 }
 
-.consult-inputs {
-    display: flex;
+.consult-block {
 
-    // .consult-inputs__input
+    // .consult-block__title
 
-    &--column {
-        flex-wrap: wrap;
+    &__title {
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
 
-        .consult-inputs__input {
-            margin: 0 0 1rem 0;
+        @media ($media_sm) {
+            font-size: 1.5rem;
         }
     }
 
-    @media ($media_sm) {
-        flex-wrap: wrap;
+    // .consult-block__inputs
 
-        .consult-inputs__input {
-            margin: 0 0 1rem 0;
+    &__inputs {
+        display: flex;
+
+        // .consult-block__inputs--column
+
+        &--column {
+            flex-wrap: wrap;
+    
+            .consult-block__input {
+                margin: 0 0 1rem 0;
+            }
+        }
+
+        @media ($media_sm) {
+            flex-wrap: wrap;
+    
+            .consult-block__input {
+                margin: 0 0 1rem 0;
+            }
         }
     }
 
-    // .consult-inputs__input
+    // .consult-block__input
 
     &__input {
         margin-right: 1rem;
         flex-basis: 200%;
     }
 
-    // .consult-inputs__btn
-
-    &__btn {
-        flex-basis: 100%;
-        width: auto;
-    }
-
-    // .consult-inputs__field
+    // .consult-block__field
 
     &__field {
         width: 100%;
     }
 
-    
+    // .consult-block__btn
+
+    &__btn {
+        flex-basis: 100%;
+        width: auto;
+    }
 }
 
 .breadcrumb {
@@ -576,6 +608,13 @@ html, body {
         &--bold {
             font-weight: 700;
         }
+
+        // .contact-info__item--space
+
+        &--space {
+            min-width: 11rem;
+            margin-right: 2.5rem;
+        }
     }
 }
 
@@ -611,12 +650,28 @@ html, body {
     display: flex;
     align-items: center;
 
+    // .buildInfo--column
+
+    &--column {
+        @media ($media_sm) {
+            flex-direction: column;
+
+            .buildInfo__value {
+                margin: 0.8rem 0 0;
+            }
+        }
+    }
+
     // .buildInfo__picture
 
     &__picture {
 
         picture {
             display: flex;
+
+            @media ($media_sm) {
+                max-width: 2.5rem;
+            }
         }
     }
 
@@ -626,12 +681,44 @@ html, body {
         font-size: 1.5rem;
         margin-left: 2rem;
 
+        @media ($media_sm) {
+            font-size: 1rem;
+        }
+
         // .buildInfo__value--min
 
         &--min {
             margin-left: 0.7rem;
             font-size: 0.9rem;
         }
+    }
+}
+
+.feature-label {
+    display: flex;
+
+    // .feature-label__img
+
+    &__img {
+        margin-right: 0.7rem; 
+    }
+
+    // .feature-label__info
+
+    &__info {
+        
+    }
+
+    // .feature-label__title
+
+    &__title {
+        font-weight: 300;
+    }
+
+    // .feature-label__description
+
+    &__description {
+        font-weight: 700;
     }
 }
 

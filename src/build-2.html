@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "TokarMebel - Вариант ST-56 «Barcelona»"
+		})
+
+	</head>
+	<body>
+		
+        @@include("_header.html", {
+            "main": "menu__item--active"
+        })
+
+        <section class="section breadcrumb-section">
+            <div class="section__inner">
+                <div class="breadcrumb">
+                    <a class="breadcrumb__link" href="./">Главная страница</a>
+                    <a class="breadcrumb__link" href="./about.html">О компании</a>
+                    <a class="breadcrumb__link" href="./build-1.html">Вариант ST-56 «Barcelona»</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section build-promo">
+            <div class="section__inner">
+                <div class="build-promo__header header-relative">
+                    <h2 class="build-promo__title header_2 header_2--left">Вариант ST-56 «Barcelona»</h2>
+                    <div class="header-relative__link">
+                        <a href="./" class="btn btn--transparent btn--transparent_primary">
+                            <svg class="btn__icon btn__icon--spaceRight btn__icon--stroke btn__icon--stroke_rotate"><use xlink:href="img/main.svg#icon_circle_arrow"></use></svg>
+                            <span class="btn__text">Вернуться назад</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="build-promo__slider">
+                    <div class="slider-gallery">
+                        <ul class="slider-gallery__slider" data-sliderWrapper>
+                            <li data-thumb="./img/slideGallery.png">
+                                <img class="imgMax" src="./img/slideGallery.png"/>
+                            </li>
+                            <li data-thumb="./img/slideGallery.png">
+                                <img class="imgMax" src="./img/slideGallery.png"/>
+                            </li>
+                            <li data-thumb="./img/slideGallery.png">
+                                <img class="imgMax" src="./img/slideGallery.png"/>
+                            </li>
+                            <li data-thumb="./img/slideGallery.png">
+                                <img class="imgMax" src="./img/slideGallery.png"/>
+                            </li>
+                            <li data-thumb="./img/slideGallery.png">
+                                <img class="imgMax" src="./img/slideGallery.png"/>
+                            </li>
+                            <li data-thumb="./img/slideGallery.png">
+                                <img class="imgMax" src="./img/slideGallery.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="build-promo__info">
+                    <div class="build-promo__price card card--border">
+                        <div class="card__content">
+                            <h3 class="card__title">от 1 000 000 грн</h3>
+                            <p class="card__description">Стоимость строения зависит от комплектации</p>
+                            <button class="btn btn--primary">Получить точный расчет</button>
+                        </div>
+                    </div>
+                    <div class="build-promo__consult consult-block">
+                        <h3 class="consult-block__title">Закажите консультацию, если сомневаетесь</h3>
+                        <div class="consult-block__inputs">
+                            <label class="consult-block__input c-field">
+                                <div class="c-field__area c-field__area--icon">
+                                    <input class="consult-block__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                    <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                </div>
+                            </label>
+                            <button class="consult-block__btn btn btn--primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--indent">
+            <div class="section__inner">
+                <div class="card card--border">
+                    <div class="card__content">
+                        <div class="feature">
+                            <div class="feature__header">
+                                <h2 class="feature__title">Характеристика строения:</h2>
+                            </div>
+                            <div class="feature__body feature__body--column">
+
+                                <div class="feature__row feature__content">
+
+                                    <div class="feature__preview">
+                                        <div class="feature__picture">
+                                            <img class="feature__img" src="./img/feature-preview.png" alt="Изображение крутого дома">
+                                        </div>
+
+                                        <div class="feature__info">
+                                            <h4 class="feature__type">Barcelona</h4>
+
+                                            <div class="feature__labels">
+                                                <div class="feature__label feature-label">
+                                                    <div class="feature-label__img">
+                                                        <img src="./img/featureLabel-technology.svg" alt="Иконка технологий" adaptImg>
+                                                    </div>
+                                                    <div class="feature-label__info">
+                                                        <h4 class="feature-label__title">Технологии:</h4>
+                                                        <span class="feature-label__description">Дом из газоблока и кирпича</span>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="feature__label feature-label">
+                                                    <div class="feature-label__img">
+                                                        <img src="./img/featureLabel-clock.svg" alt="Иконка времени" adaptImg>
+                                                    </div>
+                                                    <div class="feature-label__info">
+                                                        <h4 class="feature-label__title">Сроки строительства:</h4>
+                                                        <span class="feature-label__description">30 дней</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="feature__row feature__buildInfoItems">
+
+                                    <div class="feature__buildInfoItem buildInfo buildInfo--column">
+                                        <div class="buildInfo__picture">
+                                            <img class="imgMax" src="./img/buildInfo-area.svg" alt="Иконка площади">
+                                        </div>
+                                        <span class="buildInfo__value">20м<sup>2</sup></span>
+                                    </div>
+        
+                                    <div class="feature__buildInfoItem buildInfo buildInfo--column">
+                                        <div class="buildInfo__picture">
+                                            <img class="imgMax" src="./img/buildInfo-sizes.svg" alt="Периметр">
+                                        </div>
+                                        <span class="buildInfo__value">4x5м</span>
+                                    </div>
+        
+                                    <div class="feature__buildInfoItem buildInfo buildInfo--column">
+                                        <div class="buildInfo__picture">
+                                            <img class="imgMax" src="./img/buildInfo-storeys.svg" alt="Иконка кол-ва этажей">
+                                        </div>
+                                        <span class="buildInfo__value">3 этажа</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--spaceBottom gallery">
+            <div class="section__inner">
+                <div class="gallery__header">
+                    <h2 class="gallery__title header_2">Планировки</h2>
+                </div>
+                <div class="gallery__body">
+                    <div class="gallery__item">
+                        <img class="imgMax" src="./img/gallery-layouts-1.png" alt="Планировки">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="imgMax" src="./img/gallery-layouts-2.png" alt="Планировки">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--spaceBottom">
+            <div class="section__inner">
+                <div class="card card--inline card--primary card--reverse">
+
+                    <div class="card__picture">
+                        <img class="card__img" src="./img/consult-bg.png" alt="Изображение консультации" adaptImg>
+                    </div>
+        
+                    <div class="card__content">
+                        <div class="consult-block">
+                            <h3 class="consult-block__title">Закажите консультацию, если сомневаетесь</h3>
+                            <div class="consult-block__inputs">
+                                <label class="consult-block__input c-field">
+                                    <div class="c-field__area c-field__area--icon">
+                                        <input class="consult-block__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phoneNumber/>
+                                        <svg class='icon icon-phone c-field__icon'><use xlink:href='img/sprite.svg#phone'></use></svg>
+                                    </div>
+                                </label>
+                                <button class="consult-block__btn btn btn--primary">Заказать</button>
+                            </div>
+                        </div>
+                        <p class="card__signature">
+                            Отправляя данные, Вы соглашаетесь на обработку
+                            <a class="input-group__elem link" href="#">персональных данных</a>
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+		@@include("_footer.html")
+
+	</body>
+</html>

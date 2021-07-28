@@ -27,7 +27,6 @@
         align-items: center;
 
         height: var(--header-min-height);
-        border-bottom: 1px solid $color_footer_divider;
         padding: 0 var(--menu-details-space);
     }
 
@@ -105,6 +104,11 @@
 
     &__item {
         text-align: center;
+        border-bottom: 1px solid $color_footer_divider;
+
+        &:first-child {
+            border-top: 1px solid $color_footer_divider;
+        }
 
         &.details--opened {
             .menu-details__header {
@@ -128,7 +132,6 @@
     &__header {
         position: relative;
         padding: 0.9rem calc(0.9rem + var(--menu-details-space));
-        border-bottom: 1px solid $color_footer_divider;
 
         &::before, &::after {
             transition: 0.3s ease-in-out;
