@@ -43,6 +43,8 @@ $(document).ready(function() {
     --include("_details.js")
     --include("_dropdown.js")
     --include("_adaptImg.js")
+    --include("_range.js")
+    --include("_sidebarControls.js")
 
     $("[phoneNumber]").each((_, item) => {
         $(item).mask("+38 (999) 999-99-99")

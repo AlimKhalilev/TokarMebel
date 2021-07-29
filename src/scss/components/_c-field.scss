@@ -59,6 +59,25 @@
                 fill: lighten($color_main, 15%);
             }
         }
+
+        &--search {
+            @media ($media_not_sm) {
+                width: 30rem;
+            }
+
+            .c-field__input {
+                border: none;
+                border-bottom: 1px solid lighten($color_black_main, 50%);
+                border-radius: 0;
+                padding-left: calc(var(--inputPaddingX) + (var(--iconSize) * 1.5));
+                width: 100%;
+            }
+
+            .c-field__icon {
+                @include cursorPointer;
+                left: 0;
+            }
+        }
     }
 
     // .c-field__input

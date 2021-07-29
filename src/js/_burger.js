@@ -1,5 +1,5 @@
 function initBurgerMenu() {
-    let menu = $(".menu");
+    let menu = $(".menu--main");
     let menu_open = $("[data-menu='open']");
     let menu_close = $("[data-menu='close']");
     

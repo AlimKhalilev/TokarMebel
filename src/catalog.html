@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "TokarMebel - Вариант ST-56 «Barcelona»"
+		})
+
+	</head>
+	<body>
+		
+        @@include("_header.html", {
+            "main": "menu__item--active"
+        })
+
+        <div class="sidebar-controls">
+            <div class="sidebar-controls__item" data-filter="open">
+                <img src="./img/filter-sidebar-controls.svg" alt="Иконка фильтра">
+            </div>
+            <div class="sidebar-controls__item" data-search>
+                <img src="./img/search-sidebar-controls.svg" alt="Иконка поиска">
+            </div>
+        </div>
+
+        <section class="section filter-mobile">
+            <div class="section__inner">
+                <label class="c-field">
+                    <div class="c-field__area c-field__area--icon c-field__area--search">
+                        <input class="c-field__input" type="text" placeholder="Поиск по жилым строениям...">
+                        <svg class="icon icon-loupe c-field__icon"><use xlink:href="img/sprite.svg#loupe"></use></svg>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <section class="section breadcrumb-section">
+            <div class="section__inner">
+                <div class="breadcrumb">
+                    <a class="breadcrumb__link" href="./">Главная страница</a>
+                    <a class="breadcrumb__link" href="./catalog.html">Жилое</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--spaceBottom catalog">
+            <div class="section__inner">
+
+                <div class="catalog__header__header header-relative">
+                    <h2 class="catalog__header__title header_2 header_2--left">Каталог жилых строений</h2>
+                    <div class="header-relative__link">
+                        <label class="c-field">
+                            <div class="c-field__area c-field__area--icon c-field__area--search">
+                                <input class="c-field__input" type="text" placeholder="Поиск по жилым строениям...">
+                                <svg class="icon icon-loupe c-field__icon"><use xlink:href="img/sprite.svg#loupe"></use></svg>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="catalog__body">
+                    <div class="catalog__sidebar menu menu--filter">
+
+                        <div class="menu__header">
+                            <h4 class="menu__title">Фильтры</h4>
+                            <div class="menu__icon" data-filter="close">
+                                <img class="imMax" src="./img/burger-close.svg" alt="Иконка закрытия меню">
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters">
+                            <div class="filter">
+                                <div class="filter__details" data-details>
+                                    <div class="details__header card card--border">
+                                        <div class="filter__dropdown">Подкатегория:</div>
+                                    </div>
+                                    <div class="filter__body details__body">
+                                        <div class="filter__content">
+                                            <div class="filter__list">
+                                                <h4 class="filter__title">Дома и жилые строения</h4>
+                                                <ul class="base-list">
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Дома</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Дома из профилированого бруса</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Дома из оцилиндрованого бруса</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Каркасные дома</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Дома из блока</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Виллы</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Усадьбы</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Особняки</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter__list">
+                                                <h4 class="filter__title">Коммерческие	строения</h4>
+                                                <ul class="base-list">
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Базы отдыха</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Гостинницы</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Рестораны</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Кафе</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Магазины</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter__list">
+    
+                                                <h4 class="filter__title">Садовые и хоз постройки</h4>
+                                                <ul class="base-list">
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Деревянные бани из оцилиндрованого бруса</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Каркасные конструкции</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Беседки</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Альтанки</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Гаражи</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Кухни</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Детские игровые площадки</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Деревянные детские домики</a>
+                                                    </li>
+                                                    <li class="base-list__item">
+                                                        <a class="base-list__link" href="#">Мангальные зоны и барбекю</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="filter">
+                                <div class="filter__details" data-details>
+                                    <div class="details__header card card--border">
+                                        <div class="filter__dropdown">Сортировать по:</div>
+                                    </div>
+                                    <div class="filter__body details__body">
+                                        <div class="filter__content">
+                                            <div class="filter__list">
+                                                <ul class="base-list">
+                                                    <li class="base-list__item">Алфавиту</li>
+                                                    <li class="base-list__item">Популярности</li>
+                                                    <li class="base-list__item">Цене</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="filter">
+                                <div class="filter__details" data-details>
+                                    <div class="details__header card card--border">
+                                        <div class="filter__dropdown">Площадь (м<sup>2</sup>):</div>
+                                    </div>
+                                    <div class="filter__body details__body">
+                                        <div class="filter__content">
+                                            <div class="slider-range" data-range-start="10" data-range-end="500"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="filter">
+                                <div class="filter__details" data-details>
+                                    <div class="details__header card card--border">
+                                        <div class="filter__dropdown">Цена (грн):</div>
+                                    </div>
+                                    <div class="filter__body details__body">
+                                        <div class="filter__content">
+                                            <div class="slider-range" data-range-start="1000000" data-range-end="5000000"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <div class="catalog__content">
+                        <div class="catalog__cards">
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-1.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант Z-65 «Bavaria»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-2.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант LX-75 «JULIA»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-3.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-49v2 «Nevada»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-4.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант OS-77 «Milano»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-5.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант LX-75 «JULIA»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-6.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-49v2 «Nevada»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-7.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант OS-77 «Milano»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-8.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-22 «Classic»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-9.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-65 «Elegant»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-10.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-16 «Classic Plus»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-11.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-23 «ECO Soul»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__picture">
+                                    <img class="imgMax card__img" src="./img/catalog-img-12.png" alt="Изображение дома">
+                                </div>
+                                <div class="card__content card__content--paddingXS">
+                                    <h3 class="card__title card__title--contact">Вариант ST-99 «Edinburgh»</h3>
+                                    <div class="card__buildInfo">
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-sizes-min.svg" alt="Периметр" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">7,5х9 м</span>
+                                        </div>
+                                        <div class="buildInfo">
+                                            <div class="buildInfo__picture">
+                                                <img src="./img/buildInfo-area-min.svg" alt="Иконка площади" adaptImg>
+                                            </div>
+                                            <span class="buildInfo__value buildInfo__value--min">135 м<sup>2</sup></span>
+                                        </div>
+                                    </div>
+                                    <div class="card__controls">
+                                        <button class="card__control btn btn--primary btn--middle">Ознакомиться</button>
+                                        <span class="card__control price-label">1 000 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+
+                        <div class="catalog__createProject">
+                            <div class="card card--inline card--reverse">
+        
+                                <div class="card__picture">
+                                    <img class="card__img" src="./img/personal-project.png" alt="Изображение персонального проекта" adaptImg>
+                                </div>
+        
+                                <div class="card__content">
+                                    <h3 class="card__title">Нет подходящего проекта?</h3>
+                                    <p class="card__description">Мы разработаем проект индивидуально под ваш запрос с помощью 3D-макета</p>
+                                    <button class="btn btn--primary">Разработать проект</button>
+                                </div>
+        
+                            </div>
+                        </div>
+
+                        <div class="catalog__btn">
+                            <button class="btn btn--light">
+                                <svg class='icon icon-update btn__icon btn__icon--spaceRight'><use xlink:href='img/sprite.svg#update'></use></svg>
+                                <span class="btn__text">Показать еще больше</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+		@@include("_footer.html")
+
+	</body>
+</html>

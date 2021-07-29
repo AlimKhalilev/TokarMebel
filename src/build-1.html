@@ -59,11 +59,13 @@
                     </div>
                 </div>
                 <div class="build-promo__info">
-                    <div class="build-promo__price card card--border">
+                    <div class="build-promo__price card card--border consult-block">
                         <div class="card__content">
                             <h3 class="card__title">от 1 000 000 грн</h3>
                             <p class="card__description">Стоимость строения зависит от комплектации</p>
-                            <button class="btn btn--primary">Получить точный расчет</button>
+                            <div class="consult-block__inputs">
+                                <button class="consult-block__btn btn btn--primary">Получить точный расчет</button>
+                            </div>
                         </div>
                     </div>
                     <div class="build-promo__consult consult-block">
@@ -171,7 +173,7 @@
         <section class="section section--spaceBottom gallery">
             <div class="section__inner">
                 <div class="gallery__header">
-                    <h2 class="gallery__title header_2">Фундамент</h2>
+                    <h2 class="gallery__title header_2 header_2--left">Фундамент</h2>
                 </div>
                 <div class="gallery__body">
                     <div class="gallery__item">
@@ -184,7 +186,7 @@
         <section class="section section--spaceBottom gallery">
             <div class="section__inner">
                 <div class="gallery__header">
-                    <h2 class="gallery__title header_2">Стиль</h2>
+                    <h2 class="gallery__title header_2 header_2--left">Стиль</h2>
                 </div>
                 <div class="gallery__body">
                     <div class="gallery__item">
@@ -197,9 +199,9 @@
         <section class="section section--spaceBottom gallery">
             <div class="section__inner">
                 <div class="gallery__header">
-                    <h2 class="gallery__title header_2">Окна и входные двери</h2>
+                    <h2 class="gallery__title header_2 header_2--left">Окна и входные двери</h2>
                 </div>
-                <div class="gallery__body">
+                <div class="gallery__body gallery__body--pair">
                     <div class="gallery__item">
                         <img class="imgMax" src="./img/gallery-windows-1.png" alt="Окна и входные двери">
                     </div>
@@ -213,9 +215,9 @@
         <section class="section section--spaceBottom gallery">
             <div class="section__inner">
                 <div class="gallery__header">
-                    <h2 class="gallery__title header_2">Внутренняя отделка / фасад</h2>
+                    <h2 class="gallery__title header_2 header_2--left">Внутренняя отделка / фасад</h2>
                 </div>
-                <div class="gallery__body">
+                <div class="gallery__body gallery__body--pair">
                     <div class="gallery__item">
                         <img class="imgMax" src="./img/gallery-windows-1.png" alt="Внутренняя отделка">
                     </div>
@@ -229,7 +231,7 @@
         <section class="section section--spaceBottom gallery">
             <div class="section__inner">
                 <div class="gallery__header">
-                    <h2 class="gallery__title header_2">Кровля</h2>
+                    <h2 class="gallery__title header_2 header_2--left">Кровля</h2>
                 </div>
                 <div class="gallery__body">
                     <div class="gallery__item">
@@ -242,7 +244,7 @@
         <section class="section section--spaceBottom gallery">
             <div class="section__inner">
                 <div class="gallery__header">
-                    <h2 class="gallery__title header_2">Электросеть</h2>
+                    <h2 class="gallery__title header_2 header_2--left">Электросеть</h2>
                 </div>
                 <div class="gallery__body">
                     <div class="gallery__item">
@@ -279,6 +281,118 @@
                         </p>
                     </div>
         
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--spaceBottom process-section">
+            <div class="section__inner">
+                <div class="process-section__header">
+                    <h2 class="process-section__title header_2 header_2--left">Процесс работы</h2>
+                </div>
+                <div class="process-section__body">
+                    <div class="process-section__item">
+                        <div class="work-process">
+                            <div class="work-process__items">
+                                <div class="work-process__item work-process__labels">
+                                    <span class="work-process__label work-process__label--active">Процесс 1</span>
+                                    <span class="work-process__label">Общение с экспертами</span>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Ваше знакомство с представителем  компании.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-1.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Проведение консультации по интересующим вопросам.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-2.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Согласование всех деталей и размеров объекта.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-3.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-section__item">
+                        <div class="work-process">
+                            <div class="work-process__items">
+                                <div class="work-process__item work-process__labels">
+                                    <span class="work-process__label work-process__label--active">Процесс 2</span>
+                                    <span class="work-process__label">Подбор варианта</span>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Создание индивидуального 3D-макета вашего проекта.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-4.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Заключение договора по выбранному варианту.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-5.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Оплата предоплаты проекта.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-6.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-section__item">
+                        <div class="work-process">
+                            <div class="work-process__items">
+                                <div class="work-process__item work-process__labels">
+                                    <span class="work-process__label work-process__label--active">Процесс 3</span>
+                                    <span class="work-process__label">Процесс работы и сдача проекта</span>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Подготовка фундамента и материалов, конструкции.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-7.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Доставка на место и монтажные работы.</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-8.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-process__item card">
+                                    <div class="card__content card__content--paddingMin">
+                                        <p class="card__description card__description--process">Сдача проекта на месте и оплата оставшийся части суммы</p>
+                                        <div class="card__picture card__picture--props">
+                                            <img src="./img/wordProcess-9.svg" alt="Процесс работы" adaptImg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

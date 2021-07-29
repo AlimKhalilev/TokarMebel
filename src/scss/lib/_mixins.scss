@@ -230,6 +230,19 @@ html, body {
             background-repeat: no-repeat;
             content: "";
             left: 0;
+            top: 0.6rem;
+        }
+    }
+
+    // .base-list__link
+
+    &__link {
+        text-decoration: none;
+        color: $color_black_main;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: $color_primary;
         }
     }
 }
@@ -653,6 +666,7 @@ html, body {
     // .buildInfo--column
 
     &--column {
+        
         @media ($media_sm) {
             flex-direction: column;
 
@@ -719,6 +733,40 @@ html, body {
 
     &__description {
         font-weight: 700;
+    }
+}
+
+.price-label {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    background-color: $color_body_bg;
+}
+
+.sidebar-controls {
+    display: flex;
+    border-bottom: 1px solid $color_footer_divider;
+
+    @media ($media_not_sm) {
+        display: none;
+    }
+
+    // .sidebar-controls__item
+
+    &__item {
+        flex-basis: 100%;
+        padding: 0.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+            border-right: 1px solid $color_footer_divider;
+        }
+
+        picture {
+            display: flex;
+        }
     }
 }
 

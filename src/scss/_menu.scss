@@ -19,6 +19,17 @@
         transform: translateX(0);
     }
 
+    &--filter {
+        @media ($media_sm) {
+            background-color: $color_white;
+
+            .menu__header {
+                background-color: $color_body_bg;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
     // .menu__header
 
     &__header {
