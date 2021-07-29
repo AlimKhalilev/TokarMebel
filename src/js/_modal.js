@@ -1,7 +1,7 @@
 function initModal() {
     let overlay = document.querySelector(".overlay--modal");
-    let header = document.querySelector(".header"); // ему тоже будем добавлять paddingRight, так как он fixed
-    let withPaddingElems = [g_body, header]; // сюда добавляем все элементы, к которым хотим добавить padding 
+    //let header = document.querySelector(".header"); // ему тоже будем добавлять paddingRight, так как он fixed
+    let withPaddingElems = [g_body]; // сюда добавляем все элементы, к которым хотим добавить padding 
 
     function toggleModal() {
         overlay.classList.toggle("visible");

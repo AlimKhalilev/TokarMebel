@@ -208,6 +208,7 @@ html, body {
             &::before {
                 width: 0.75rem;
                 height: 0.75rem;
+                top: 0.2rem;
             }
         }
     }
@@ -517,7 +518,7 @@ html, body {
         margin-bottom: 1.5rem;
 
         @media ($media_sm) {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
     }
 

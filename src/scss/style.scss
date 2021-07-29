@@ -1848,6 +1848,12 @@
 
     &__createProject {
         margin: 2rem 0;
+
+        .btn {
+            @media ($media_sm) {
+                width: 100%;
+            }
+        }
     }
 }
 

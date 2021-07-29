@@ -1,58 +1,61 @@
-<div class="modal" id="modal_success">
+<div class="modal" id="modal_questions">
     <div class="modal__header">
-        <h2 class="blockTitle">Хей, это модалка!</h2>
+        <img class="modal__img modal__img--fill" src="./img/modal-img-bg.png" alt="Изображение человека">
     </div>
     <div class="modal__close" data-closeModal>
-        <svg class='icon icon-close'><use xlink:href='img/sprite.svg#close'></use></svg>
+        <img src="./img/close-modal.svg" alt="Иконка закрытия модального окна" adaptImg>
     </div>
     <div class="modal__content">
-        <div class="modal__img">
-            <svg class='icon icon-window'><use xlink:href='img/sprite.svg#window'></use></svg>
-        </div>
-        <p class="modal__text">
-            Спасибо за прочтение данного текста!
-            Тут нет ничего важного и интересного, но все же...
-            StarterGulp - это круто !
-            главное, чтобы было продолжение)
-        </p>
-        <div class="modal__button">
-            <button class="btn btn--primary" data-closeModal>Хорошо</button>
+        <div class="card__content">
+            <div class="consult-block">
+                <h3 class="consult-block__title">Получите ответы на все свои вопросы за 15 минут</h3>
+                <div class="consult-block__inputs consult-block__inputs--column">
+                    <label class="consult-block__input c-field">
+                        <div class="c-field__area c-field__area--icon">
+                            <input class="consult-block__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phonenumber="">
+                            <svg class="icon icon-phone c-field__icon"><use xlink:href="img/sprite.svg#phone"></use></svg>
+                        </div>
+                    </label>
+                    <button class="consult-block__btn btn btn--primary">Получить точный расчет</button>
+                </div>
+            </div>
+            <p class="card__signature">
+                Отправляя данные, Вы соглашаетесь на обработку
+                <a class="input-group__elem link" href="#">персональных данных</a>
+            </p>
         </div>
     </div>
 </div>
 
-<div class="modal" id="modal_second">
+<div class="modal" id="modal_consult">
     <div class="modal__header">
-        <h2 class="blockTitle">Хей, это уже 2ая модалка!</h2>
+        <h2 class="modal__title">Вариант ST-56 «Barcelona»</h2>
+        <img class="modal__img" src="./img/img-modal-house.png" alt="Изображение дома">
     </div>
     <div class="modal__close" data-closeModal>
-        <svg class='icon icon-close'><use xlink:href='img/sprite.svg#close'></use></svg>
+        <img src="./img/close-modal.svg" alt="Иконка закрытия модального окна" adaptImg>
     </div>
     <div class="modal__content">
-        <p class="modal__text">
-            Просто текст из модалки 2...
-        </p>
-        <div class="modal__button">
-            <button class="btn btn--primary" data-changeModal="modal_third">Еще модалка</button>
+        <div class="card__content">
+            <div class="consult-block">
+                <h3 class="consult-block__title">Закажите консультацию, если сомневаетесь</h3>
+                <div class="consult-block__inputs consult-block__inputs--column">
+                    <label class="consult-block__input c-field">
+                        <div class="c-field__area c-field__area--icon">
+                            <input class="consult-block__field c-field__input" type="text" placeholder="+38 XXX XXX XX XX" phonenumber="">
+                            <svg class="icon icon-phone c-field__icon"><use xlink:href="img/sprite.svg#phone"></use></svg>
+                        </div>
+                    </label>
+                    <button class="consult-block__btn btn btn--primary">Получить точный расчет</button>
+                </div>
+            </div>
+            <p class="card__signature">
+                Отправляя данные, Вы соглашаетесь на обработку
+                <a class="input-group__elem link" href="#">персональных данных</a>
+            </p>
         </div>
     </div>
 </div>
 
-<div class="modal" id="modal_third">
-    <div class="modal__header">
-        <h2 class="blockTitle">Хей, а это уже 3ая модалка! Ого</h2>
-    </div>
-    <div class="modal__close" data-closeModal>
-        <svg class='icon icon-close'><use xlink:href='img/sprite.svg#close'></use></svg>
-    </div>
-    <div class="modal__content">
-        <p class="modal__text">
-            Просто текст из модалки 3...
-        </p>
-        <div class="modal__button">
-            <button class="btn btn--primary" data-closeModal>Окей</button>
-        </div>
-    </div>
-</div>
 
 <div class="overlay overlay--modal" data-closeModal></div>
